@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.hs.dbbclientside.module.home.HomeViewModle"/>
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <!--搜索栏-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/home_search"
+                android:layout_width="@dimen/x629"
+                android:layout_height="@dimen/y65"
+                android:layout_marginLeft="@dimen/x20"
+                android:background="@drawable/bg_home_search"
+                android:drawableLeft="@drawable/ic_home_search_icon"
+                android:drawablePadding="@dimen/x20"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/x20"
+                android:text="汇车贷"
+                android:textColor="#999999"/>
+
+            <View
+                style="@style/autoFillStyle"/>
+
+            <RelativeLayout
+                android:layout_width="@dimen/x56"
+                android:layout_height="@dimen/y50"
+                android:layout_marginRight="@dimen/x15">
+
+                <ImageView
+                    android:layout_width="@dimen/x43"
+                    android:layout_height="@dimen/y41"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/ic_home_message"/>
+
+
+                <TextView
+                    android:id="@+id/home_message_remind"
+                    android:layout_width="@dimen/x34"
+                    android:layout_height="@dimen/y22"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/ic_home_message_remind"
+                    android:gravity="center"
+                    android:text="21"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/x16"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--横线-->
+        <View
+            style="@style/horizontalLine"
+            android:layout_marginTop="@dimen/y13"/>
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--首页的Banner图-->
+                <android.support.v7.widget.CardView
+                    android:layout_width="@dimen/x720"
+                    android:layout_height="@dimen/x362"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/y15"
+                    app:cardCornerRadius="@dimen/x8"
+                    app:cardElevation="16dp">
+
+
+                    <com.zht.banner.banner.ConvenientBanner
+                        android:id="@+id/home_banner"
+                        android:layout_width="@dimen/x720"
+                        android:layout_height="@dimen/x362"/>
+
+                </android.support.v7.widget.CardView>
+
+
+                <!--四个小按钮-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!--我要借款-->
+                    <RelativeLayout
+                        style="@style/home_button_container">
+
+                        <TextView
+                            android:id="@+id/home_need_borrow"
+                            style="@style/home_button_name"
+                            android:text="我要借款"/>
+
+                        <TextView
+                            android:id="@+id/home_need_borrow_instruction"
+                            style="@style/home_button_instruction"
+                            android:layout_below="@id/home_need_borrow"
+                            android:text="额度高 审核快"/>
+
+                        <ImageView
+                            android:id="@+id/home_need_borrow_icon"
+                            style="@style/home_button_icon"
+                            android:src="@drawable/ic_home_need_borrow"/>
+
+                    </RelativeLayout>
+
+                    <!--邀请好友-->
+                    <RelativeLayout
+                        style="@style/home_button_container">
+
+                        <TextView
+                            android:id="@+id/home_invite_friends"
+                            style="@style/home_button_name"
+                            android:text="邀请好友"/>
+
+                        <TextView
+                            android:id="@+id/home_invite_friends_instruction"
+                            style="@style/home_button_instruction"
+                            android:layout_below="@id/home_invite_friends"
+                            android:text="邀请好友有好礼"/>
+
+
+                        <ImageView
+                            android:id="@+id/home_invite_friends_icon"
+                            style="@style/home_button_icon"
+                            android:src="@drawable/ic_home_invite_friends"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!--使用帮助-->
+                    <RelativeLayout
+                        style="@style/home_button_container">
+
+                        <TextView
+                            android:id="@+id/home_use_help"
+                            style="@style/home_button_name"
+                            android:text="使用帮助"/>
+
+                        <TextView
+                            android:id="@+id/home_use_help_instruction"
+                            style="@style/home_button_instruction"
+                            android:layout_below="@id/home_use_help"
+                            android:text="一分钟了解流程"/>
+
+
+                        <ImageView
+                            android:id="@+id/home_use_help_icon"
+                            style="@style/home_button_icon"
+                            android:background="@drawable/ic_home_use_help"/>
+
+                    </RelativeLayout>
+
+
+                    <!--关于我们-->
+                    <RelativeLayout
+                        style="@style/home_button_container">
+
+                        <TextView
+                            android:id="@+id/home_about_us"
+                            style="@style/home_button_name"
+                            android:text="关于我们"/>
+
+
+                        <TextView
+                            android:id="@+id/home_about_us_instruction"
+                            style="@style/home_button_instruction"
+                            android:layout_below="@id/home_about_us"
+                            android:text="了解我们的平台"/>
+
+
+                        <ImageView
+                            android:id="@+id/home_about_us_icon"
+                            style="@style/home_button_icon"
+                            android:src="@drawable/ic_home_about_us"/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+                <View
+                    style="@style/horizontalLine"
+                    android:layout_height="@dimen/y15"
+                    android:layout_marginTop="@dimen/x15"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y60"
+                    android:layout_marginBottom="@dimen/y38"
+                    android:layout_marginTop="@dimen/y38"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+
+                        android:layout_width="@dimen/y10"
+                        android:layout_height="@dimen/y34"
+                        android:layout_marginLeft="@dimen/x15"
+
+                        android:src="@drawable/ic_home_product_line"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x13"
+                        android:text="汇贷团"
+                        android:textColor="#222222"
+                        android:textSize="@dimen/x34"/>
+
+
+                </LinearLayout>
+
+                <View
+                    style="@style/horizontalLine"/>
+
+
+                <!--类型一-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/y39"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/x35"
+                            android:src="@drawable/ic_home_product_dot"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/x15"
+                            android:text="慧明消费贷"
+                            android:textColor="#444444"
+                            android:textSize="@dimen/x34"/>
+
+
+                        <View style="@style/autoFillStyle"/>
+
+                        <Button
+                            android:layout_width="@dimen/x150"
+                            android:layout_height="@dimen/y50"
+                            android:layout_marginRight="@dimen/x15"
+                            android:background="@drawable/ic_home_product_button"
+                            android:text="了解详情"
+                            android:textColor="#fff"/>
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x64"
+                        android:layout_marginTop="@dimen/y28"
+                        android:text="全民老百姓都可以贷款的方案"
+                        android:textColor="#888888"
+                        android:textSize="@dimen/x28"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/y40"
+                        android:layout_marginLeft="@dimen/x64"
+                        android:layout_marginTop="@dimen/y30"
+                        android:text="高中以上文凭、能提供银行卡发薪证明"
+                        android:textColor="#888888"
+                        android:textSize="@dimen/x28"/>
+
+
+                </LinearLayout>
+
+                <View
+                    style="@style/horizontalLine"/>
+
+                <!--类型二-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/y39"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/x35"
+                            android:src="@drawable/ic_home_product_dot"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/x15"
+                            android:text="慧明消费贷"
+                            android:textColor="#444444"
+                            android:textSize="@dimen/x34"/>
+
+
+                        <View style="@style/autoFillStyle"/>
+
+                        <Button
+                            android:layout_width="@dimen/x150"
+                            android:layout_height="@dimen/y50"
+                            android:layout_marginRight="@dimen/x15"
+                            android:background="@drawable/ic_home_product_button"
+                            android:text="了解详情"
+                            android:textColor="#fff"/>
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x64"
+                        android:layout_marginTop="@dimen/y28"
+                        android:text="全民老百姓都可以贷款的方案"
+                        android:textColor="#888888"
+                        android:textSize="@dimen/x28"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/y40"
+                        android:layout_marginLeft="@dimen/x64"
+                        android:layout_marginTop="@dimen/y30"
+                        android:text="高中以上文凭、能提供银行卡发薪证明"
+                        android:textColor="#888888"
+                        android:textSize="@dimen/x28"/>
+
+
+                </LinearLayout>
+
+                <View
+                    style="@style/horizontalLine"/>
+
+                <!--类型三-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/y39"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/x35"
+                            android:src="@drawable/ic_home_product_dot"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/x15"
+                            android:text="慧明消费贷"
+                            android:textColor="#444444"
+                            android:textSize="@dimen/x34"/>
+
+
+                        <View style="@style/autoFillStyle"/>
+
+                        <Button
+                            android:layout_width="@dimen/x150"
+                            android:layout_height="@dimen/y50"
+                            android:layout_marginRight="@dimen/x15"
+                            android:background="@drawable/ic_home_product_button"
+                            android:text="了解详情"
+                            android:textColor="#fff"/>
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x64"
+                        android:layout_marginTop="@dimen/y28"
+                        android:text="全民老百姓都可以贷款的方案"
+                        android:textColor="#888888"
+                        android:textSize="@dimen/x28"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/y40"
+                        android:layout_marginLeft="@dimen/x64"
+                        android:layout_marginTop="@dimen/y30"
+                        android:text="高中以上文凭、能提供银行卡发薪证明"
+                        android:textColor="#888888"
+                        android:textSize="@dimen/x28"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+
+</layout>
