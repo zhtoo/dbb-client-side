@@ -10,10 +10,10 @@ import android.widget.TabHost;
 
 import com.hs.dbbclientside.databinding.ActivityMainBinding;
 import com.hs.dbbclientside.databinding.TabMainBinding;
-import com.hs.dbbclientside.module.BorrowFragment;
-import com.hs.dbbclientside.module.HelpFragment;
+import com.hs.dbbclientside.module.borrow.BorrowFragment;
+import com.hs.dbbclientside.module.help.HelpFragment;
 import com.hs.dbbclientside.module.home.HomeFragment;
-import com.hs.dbbclientside.module.MeFragment;
+import com.hs.dbbclientside.module.me.MeFragment;
 
 /**
  * 作者：zhanghaitao on 2017/12/22 10:14

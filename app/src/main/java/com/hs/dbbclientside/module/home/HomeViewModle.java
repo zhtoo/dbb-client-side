@@ -58,6 +58,8 @@ public class HomeViewModle {
             bean.setIntroduction(banner.getTitle());
             bannerImages.add(bean);
         }
+
+        binding.homeBanner.startTurning(3000);
         binding.homeBanner.setPages(
                 new CBViewHolderCreator<NetworkImageHolderView>() {
                     @Override

@@ -22,6 +22,7 @@
         </activity>
 
         <activity android:name="com.zht.expandableview.ExampleActivity"/>
+        <activity android:name=".module.help.CreditQueriesActivity"/>
     </application>
 
 </manifest>

@@ -148,4 +148,13 @@ public class StatusBarUtils {
         blue = (int) (blue * a + 0.5);
         return 0xff << 24 | red << 16 | green << 8 | blue;
     }
+
+
+    public static void measureTitleBarHeight(View view , Context context) {
+        if (view != null) {
+            view.setPadding(view.getLeft(),
+                    StatusBarUtils.getStatusBarHeight(context),
+                    view.getRight(), view.getBottom());
+        }
+    }
 }

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="str"
+            type="String"/>
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y140"
+                    android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginTop="@dimen/y20"
+            android:layout_marginLeft="@dimen/x52"
+            android:id="@+id/borrow_content_icon"
+            android:layout_width="@dimen/x49"
+            android:layout_height="@dimen/x49"
+            android:src="@drawable/ic_borrow_hmd_01"/>
+
+        <TextView
+            android:id="@+id/borrow_content_loan_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x36"
+            android:layout_marginTop="@dimen/y10"
+            android:layout_below="@id/borrow_content_icon"
+            android:textSize="@dimen/x28"
+            android:textColor="#333333"
+            android:text="汇民贷"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/y30"
+            android:id="@+id/borrow_money_range"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/x28"
+            android:textColor="#333333"
+            android:text="￥2,000-20,000"/>
+
+        <TextView
+            android:id="@+id/borrow_money_instruction"
+            android:layout_marginTop="@dimen/y20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/borrow_money_range"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/x24"
+            android:textColor="#999999"
+            android:text="2,000起借 到账快"/>
+
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="@dimen/x113"
+            android:layout_height="@dimen/y43"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/y47"
+            android:layout_marginTop="@dimen/y40"
+            android:background="@drawable/bg_text_rectangle"
+            android:text="去借款"
+            android:textColor="#61AFFA"
+            android:layout_marginRight="@dimen/x30"
+            android:textSize="@dimen/x28"/>
+
+        <View
+            style="@style/horizontalLine"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+
+</layout>

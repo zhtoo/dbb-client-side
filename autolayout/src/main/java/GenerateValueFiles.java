@@ -25,6 +25,9 @@ public class GenerateValueFiles {
     //常见尺寸集
     private static final String SUPPORT_DIMESION = "300,400;320,480;480,800;480,854;540,888;540,960;600,1024;720,1184;720,1196;720,1280;768,1024;800,1280;1080,1812;1080,1920;1440,2560;";
 
+    private  String[] fileReplace = {"values-hdpi","values-mdpi","values-xhdpi","values-xxhdpi","values-xxxhdpi"};
+    private int[]  fileReplacePosition= {800,480,480,320,1280,720,1920,1080,2560,1440};
+
     private String supportStr = SUPPORT_DIMESION;
 
     public GenerateValueFiles(int baseX, int baseY, String supportStr) {
@@ -127,10 +130,32 @@ public class GenerateValueFiles {
                 h + ""));
         sbForHeight.append("</resources>");
 
-        //生成文件
-        File fileDir = new File(dirStr + File.separator
-                + VALUE_TEMPLATE.replace("{0}", h + "")//
-                .replace("{1}", w + ""));
+
+        /**
+         * values-hdpi      ---> 800x480
+         * values-mdpi      ---> 480x320
+         * values-xhdpi     ---> 1280x720
+         * values-xxhdpi    ---> 1920x1080
+         * values-xxxhdpi   ---> 2560x1440
+         */
+        //生成文件夹
+        File fileDir = null;
+        //h 高  w 宽
+        int position = -1;
+        for (int i = 0; i < 5; i++) {
+            if(h ==fileReplacePosition[2*i]&& w == fileReplacePosition[2*i+1] ){
+                position = i ;
+            }
+        }
+        if(position !=-1){
+             fileDir = new File(dirStr + File.separator
+                    + fileReplace[position]);
+
+        }else {
+             fileDir = new File(dirStr + File.separator
+                    + VALUE_TEMPLATE.replace("{0}", h + "")//
+                    .replace("{1}", w + ""));
+        }
         fileDir.mkdir();
 
         File layxFile = new File(fileDir.getAbsolutePath(), "lay_x.xml");

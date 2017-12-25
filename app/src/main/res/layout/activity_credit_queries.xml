@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="viewModle"
+            type="com.hs.dbbclientside.module.help.CreditQueriesViewModle"/>
+    </data>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="#F5F7F6"
+                  android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y322"
+            android:background="#628F9D"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y100"
+                android:background="#628F9D">
+
+                <Button
+                    android:layout_width="@dimen/x18"
+                    android:layout_height="@dimen/y31"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginTop="@dimen/x68"
+                    android:background="@drawable/zx_btn_01"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+
+                    android:layout_marginTop="@dimen/x68"
+                    android:text="验证征信报告"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/x28"/>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/x85"
+                        android:layout_height="@dimen/y85"
+                        android:layout_marginTop="@dimen/x40"
+                        android:src="@drawable/zx_icon_01"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/y15"
+                        android:text="登录"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/x28"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/x44"
+                    android:layout_height="@dimen/y51"
+                    android:layout_marginLeft="@dimen/x54"
+                    android:layout_marginRight="@dimen/x10"
+                    android:layout_marginTop="@dimen/x60"
+                    android:src="@drawable/zx_icon_04"/>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/x85"
+                        android:layout_height="@dimen/y85"
+                        android:layout_marginTop="@dimen/x40"
+                        android:src="@drawable/zx_icon_02"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/y15"
+                        android:text="提交身份信息"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/x28"/>
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="@dimen/x44"
+                    android:layout_height="@dimen/y51"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_marginRight="@dimen/x54"
+                    android:layout_marginTop="@dimen/x60"
+                    android:src="@drawable/zx_icon_04"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/x85"
+                        android:layout_height="@dimen/y85"
+                        android:layout_marginTop="@dimen/x40"
+                        android:src="@drawable/zx_icon_03"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/y15"
+                        android:text="获取结果"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/x28"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="@dimen/x125"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x30"
+                android:text="账号"
+                android:textColor="#444444"
+                android:textSize="@dimen/x28"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="6-16位数字字母"
+                android:textColor="#999999"
+                android:textColorHint="#BBBBBB"
+                android:textCursorDrawable="@drawable/bg_edit_cursor"
+                android:textSize="@dimen/x28"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/horizontalLine"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="@dimen/x125"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x30"
+                android:text="密码"
+                android:textColor="#444444"
+                android:textSize="@dimen/x28"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="6-20位同时包含数字字母"
+                android:inputType="textPassword"
+                android:textColor="#999999"
+                android:textColorHint="#BBBBBB"
+                android:textCursorDrawable="@drawable/bg_edit_cursor"
+                android:textSize="@dimen/x28"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/horizontalLine"/>
+
+
+        <LinearLayout
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="@dimen/x125"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x30"
+                android:text="验证码"
+                android:textColor="#444444"
+                android:textSize="@dimen/x28"/>
+
+            <EditText
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入右图的字符"
+                android:inputType="textPassword"
+                android:textColor="#999999"
+                android:textColorHint="#BBBBBB"
+                android:textCursorDrawable="@drawable/bg_edit_cursor"
+                android:textSize="@dimen/x28"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/x20"
+
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/x104"
+                    android:layout_height="@dimen/y38"
+                    android:background="#99C2CF"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="看不清，换一个"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/x20"
+
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            style="@style/horizontalLine"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/y15"
+            android:text="点击登录视为您授权豆宝宝获取您的征信报告，用于对您进行资信评估"
+            android:textColor="#999999"
+            android:textSize="@dimen/x20"/>
+
+        <Button
+            android:layout_width="@dimen/x540"
+            android:layout_height="@dimen/y80"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/y80"
+            android:background="#628F9D"
+            android:text="登录"
+            android:textColor="#fff"/>
+    </LinearLayout>
+
+</layout>
