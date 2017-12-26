@@ -20,7 +20,7 @@
         <!--搜索栏-->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/y98"
             android:layout_marginTop="@dimen/y5"
             android:gravity="center_vertical"
             android:orientation="horizontal">
@@ -95,7 +95,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="@dimen/y15"
                     app:cardCornerRadius="@dimen/x8"
-                    app:cardElevation="16dp">
+                    app:cardElevation="0dp">
 
 
                     <com.zht.banner.banner.ConvenientBanner

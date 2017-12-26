@@ -23,6 +23,8 @@
 
         <activity android:name="com.zht.expandableview.ExampleActivity"/>
         <activity android:name=".module.help.CreditQueriesActivity"/>
+        <activity android:name=".module.borrow.ApplyIntroduceActivity"/>
+        <activity android:name=".module.borrow.ApplyActivity"/>
     </application>
 
 </manifest>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="viewModle"
+            type="com.hs.dbbclientside.module.borrow.ApplyViewModle"/>
+
+    </data>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y98">
+
+            <FrameLayout
+                android:layout_width="@dimen/x98"
+                android:layout_height="@dimen/y98"
+                >
+
+                <ImageView
+                    android:layout_width="@dimen/x18"
+                    android:layout_height="@dimen/y31"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_arrow_left"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="贷款详情"
+                android:textColor="#222222"
+                android:textSize="@dimen/x36"/>
+
+
+        </RelativeLayout>
+
+
+        <View style="@style/horizontalLine"/>
+
+
+        <FrameLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/y40"
+            android:layout_width="@dimen/x435"
+            android:layout_height="@dimen/y435">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/jksq_icon_04"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/y172"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="@dimen/x36"
+                android:layout_gravity="center_horizontal"
+                android:text="20,000"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/y30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="@dimen/x28"
+                android:layout_gravity="center"
+                android:text="可贷最高额度"/>
+
+
+
+        </FrameLayout>
+
+        <View
+            android:layout_marginTop="@dimen/y80"
+            style="@style/horizontalLine"/>
+
+        <!--借款金额-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="@dimen/x66"
+                android:layout_height="@dimen/y66"
+                android:src="@drawable/jksq_icon_01"
+                android:layout_marginLeft="@dimen/x30"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/x28"
+                android:layout_marginLeft="@dimen/x15"
+                android:textColor="#222"
+                android:text="借款金额"/>
+
+<View
+    style="@style/autoFillStyle"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/x24"
+                android:layout_marginLeft="@dimen/x15"
+                android:background="@null"
+                android:textColorHint="#BBBBBB"
+                android:textCursorDrawable="@drawable/bg_edit_cursor"
+                android:textColor="#61AFFA"
+                android:text="0.0"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/x24"
+                android:layout_marginRight="@dimen/x30"
+                android:textColor="#222"
+                android:text="元"/>
+
+
+        </LinearLayout>
+
+
+        <!--借款周期-->
+
+
+
+        <!--每月需还-->
+
+
+
+    </LinearLayout>
+
+</layout>

@@ -1,11 +1,13 @@
 package com.hs.dbbclientside.module.borrow;
 
 import android.content.Context;
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.databinding.ViewDataBinding;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 
 import com.hs.dbbclientside.R;
@@ -198,6 +200,14 @@ public class BorrowViewModle {
                 binding.borrowContentLoanType.setText(datas.get(position).getLoanType());
                 binding.borrowMoneyRange.setText(datas.get(position).getLoanRange());
                 binding.borrowMoneyInstruction.setText(datas.get(position).getLoanInstruction());
+
+                binding.borrowContent.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        context.startActivity(new Intent(context,ApplyIntroduceActivity.class));
+                    }
+                });
+
             }
 
         }
