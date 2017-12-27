@@ -69,7 +69,7 @@ public class BorrowViewModle {
 
     private void initRecycler() {
         // TODO: 2017/12/25 联网获取数据
-        binding.borrowRecycler.setLayoutManager(new LinearLayoutManager(context));
+
         LinearLayoutManager manager = new LinearLayoutManager(context);
         binding.borrowRecycler.setLayoutManager(manager);
         binding.borrowRecycler.setHasFixedSize(true);

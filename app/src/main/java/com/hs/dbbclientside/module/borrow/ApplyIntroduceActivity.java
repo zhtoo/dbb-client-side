@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
 import com.hs.dbbclientside.R;
+import com.hs.dbbclientside.databinding.ActivityApplyIntroduceBinding;
 
 /**
  * 作者：zhanghaitao on 2017/12/26 13:35
@@ -16,10 +17,16 @@ import com.hs.dbbclientside.R;
 
 public class ApplyIntroduceActivity extends AppCompatActivity {
 
+    private ActivityApplyIntroduceBinding binding;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        DataBindingUtil.setContentView(this, R.layout.activity_apply_introduce);
-
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_apply_introduce);
+        binding.setViewModle(new ApplyIntroduceViewModle(this,binding));
     }
+
+
+
+
 }

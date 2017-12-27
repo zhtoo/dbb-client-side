@@ -22,7 +22,8 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="@dimen/x302"
+            android:layout_height="@dimen/x300"
+            android:scaleType="centerCrop"
             android:src="@drawable/ic_help_banner"/>
 
         <LinearLayout
@@ -124,6 +125,7 @@
             <View style="@style/verticalLine"/>
 
             <RelativeLayout
+                android:onClick="@{viewModle.go2ForecastTools}"
                 android:layout_width="1dp"
                 android:layout_height="@dimen/y249"
                 android:layout_weight="1">
@@ -141,7 +143,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_toRightOf="@id/help_interest_calculated"
-                    android:text="利息计算"
+                    android:text="预估工具"
                     android:layout_marginLeft="@dimen/x20"
                     android:textColor="#444444"
                     android:textSize="@dimen/x28"/>
@@ -186,6 +188,7 @@
             <View style="@style/verticalLine"/>
 
             <RelativeLayout
+                android:onClick="@{viewModle.go2ApplyProcess}"
                 android:layout_width="1dp"
                 android:layout_height="@dimen/y249"
                 android:layout_weight="1">
@@ -203,7 +206,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_toRightOf="@id/help_office_process"
-                    android:text="办公流程"
+                    android:text="办理流程"
                     android:textColor="#444444"
                     android:layout_marginLeft="@dimen/x20"
                     android:textSize="@dimen/x28"/>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.hs.dbbclientside.module.me.ApplyRecordViewModel"/>
+
+    </data>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y98"
+            android:background="#FFF">
+
+            <FrameLayout
+                android:layout_width="@dimen/x98"
+                android:layout_height="@dimen/y98">
+
+                <ImageView
+                    android:layout_width="@dimen/x18"
+                    android:layout_height="@dimen/y31"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_arrow_left"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="申请记录"
+                android:textColor="#222222"
+                android:textSize="@dimen/x36"/>
+
+
+        </RelativeLayout>
+
+        <View style="@style/horizontalLine"/>
+
+        <android.support.design.widget.TabLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/apply_record_tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y90"
+            android:background="#FFF"
+            app:tabIndicatorColor="#FECF70"
+            app:tabIndicatorHeight="@dimen/y2"
+            app:tabSelectedTextColor="#FECF70"
+            app:tabTextColor="#999"/>
+
+        <View
+            style="@style/horizontalLine"
+            android:layout_height="@dimen/y15"
+            android:background="#F5F7F6"/>
+
+        <View
+            style="@style/horizontalLine"/>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/apply_record_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</layout>

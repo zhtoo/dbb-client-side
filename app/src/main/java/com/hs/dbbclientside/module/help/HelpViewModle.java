@@ -25,7 +25,15 @@ public class HelpViewModle {
 
 
     public void go2CreditQueries(View view) {
-       context.startActivity(new Intent(context,CreditQueriesActivity.class));
+        context.startActivity(new Intent(context, CreditQueriesActivity.class));
+    }
+
+    public void go2ApplyProcess(View view) {
+        context.startActivity(new Intent(context, ApplyProcessActivtiy.class));
+    }
+
+    public void go2ForecastTools(View view) {
+        context.startActivity(new Intent(context, ForecastToolsActivity.class));
     }
 
 

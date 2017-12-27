@@ -92,6 +92,7 @@
 
         <!--账单-->
         <LinearLayout
+            android:onClick="@{viewModle.go2Bill}"
             android:background="#fff"
             android:layout_width="match_parent"
             android:layout_height="@dimen/y108"
@@ -213,8 +214,8 @@
 
         <!--申请记录-->
         <LinearLayout
+            android:onClick="@{viewModle.go2ApplyRecord}"
             android:background="#fff"
-
             android:layout_width="match_parent"
             android:layout_height="@dimen/y108"
             android:gravity="center_vertical"

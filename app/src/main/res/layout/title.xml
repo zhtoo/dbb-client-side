@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/title_container"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y98">
+
+    <FrameLayout
+        android:id="@+id/left_btn"
+        android:layout_width="@dimen/x98"
+        android:layout_height="@dimen/y98">
+
+        <ImageView
+            android:layout_width="@dimen/x18"
+            android:layout_height="@dimen/y31"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_arrow_left"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="我是标题"
+        android:textColor="#222222"
+        android:textSize="@dimen/x36"/>
+
+
+</RelativeLayout>
+
+
+

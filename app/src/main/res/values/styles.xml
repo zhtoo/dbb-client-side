@@ -23,13 +23,13 @@
     <!-- 横向线条 -->
     <style name="horizontalLine">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">@dimen/x1</item>
+        <item name="android:layout_height">@dimen/y2</item>
         <item name="android:background">@color/lineBackground</item>
     </style>
 
-    <!-- 横向线条 -->
+    <!-- 纵向线条 -->
     <style name="verticalLine">
-        <item name="android:layout_width">@dimen/x1</item>
+        <item name="android:layout_width">@dimen/x2</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:background">@color/lineBackground</item>
     </style>

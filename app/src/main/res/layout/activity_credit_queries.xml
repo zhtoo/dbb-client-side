@@ -23,22 +23,30 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/y110"
+                android:layout_height="@dimen/y98"
                 android:background="#628F9D">
 
-                <Button
-                    android:layout_width="@dimen/x18"
-                    android:layout_height="@dimen/y31"
-                    android:layout_marginLeft="@dimen/x30"
-                    android:layout_marginTop="@dimen/x68"
-                    android:background="@drawable/zx_btn_01"/>
+                <FrameLayout
+                    android:layout_width="@dimen/x98"
+                    android:layout_height="@dimen/x98"
+                    android:onClick="back">
+
+
+                    <Button
+                        android:layout_width="@dimen/x18"
+                        android:layout_height="@dimen/y31"
+                        android:layout_gravity="center"
+                        android:background="@drawable/zx_btn_01"/>
+
+                </FrameLayout>
+
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
 
-                    android:layout_marginTop="@dimen/x68"
+                    android:layout_centerVertical="true"
                     android:text="验证征信报告"
                     android:textColor="#fff"
                     android:textSize="@dimen/x36"/>
@@ -165,9 +173,9 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@null"
                 android:hint="6-16位数字字母"
                 android:textColor="#999999"
-                android:background="@null"
                 android:textColorHint="#BBBBBB"
                 android:textCursorDrawable="@drawable/bg_edit_cursor"
                 android:textSize="@dimen/x28"/>
@@ -212,9 +220,9 @@
 
 
         <LinearLayout
-            android:background="#fff"
             android:layout_width="match_parent"
             android:layout_height="@dimen/y120"
+            android:background="#fff"
             android:gravity="center_vertical"
             android:orientation="horizontal">
 

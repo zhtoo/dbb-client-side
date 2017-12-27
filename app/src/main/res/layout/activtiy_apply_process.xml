@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y98"
+        android:background="#FFF">
+
+        <FrameLayout
+            android:layout_width="@dimen/x98"
+            android:layout_height="@dimen/y98">
+
+            <ImageView
+                android:layout_width="@dimen/x18"
+                android:layout_height="@dimen/y31"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_arrow_left"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="办理流程"
+            android:textColor="#222222"
+            android:textSize="@dimen/x36"/>
+
+
+    </RelativeLayout>
+
+    <View style="@style/horizontalLine"/>
+<!--1-->
+    <RelativeLayout
+        android:background="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120">
+
+        <ImageView
+            android:id="@+id/apply_process_icon01"
+            android:layout_width="@dimen/x58"
+            android:layout_height="@dimen/y58"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_centerVertical="true"
+            android:src="@drawable/lc_icon_01"/>
+
+        <TextView
+            android:id="@+id/apply_process_text01"
+            android:layout_toRightOf="@id/apply_process_icon01"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_marginTop="@dimen/y28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.申请评估"
+            android:textColor="#444444"
+            android:textSize="@dimen/x28"/>
+
+        <TextView
+            android:layout_toRightOf="@id/apply_process_icon01"
+            android:layout_below="@id/apply_process_text01"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_marginTop="@dimen/y5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="提交申请"
+            android:textColor="#BBB"
+            android:textSize="@dimen/x24"/>
+
+    </RelativeLayout>
+
+    <View style="@style/horizontalLine"/>
+<!--2-->
+    <RelativeLayout
+        android:background="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120">
+
+        <ImageView
+            android:id="@+id/apply_process_icon02"
+            android:layout_width="@dimen/x58"
+            android:layout_height="@dimen/y58"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_centerVertical="true"
+            android:src="@drawable/lc_icon_02"/>
+
+        <TextView
+            android:id="@+id/apply_process_text02"
+            android:layout_toRightOf="@id/apply_process_icon02"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_marginTop="@dimen/y28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.线下估值"
+            android:textColor="#444444"
+            android:textSize="@dimen/x28"/>
+
+        <TextView
+            android:layout_toRightOf="@id/apply_process_icon02"
+            android:layout_below="@id/apply_process_text02"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_marginTop="@dimen/y5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="线下估值，直接反馈估值结果"
+            android:textColor="#BBB"
+            android:textSize="@dimen/x24"/>
+
+    </RelativeLayout>
+
+    <View style="@style/horizontalLine"/>
+<!--3-->
+    <RelativeLayout
+        android:background="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120">
+
+        <ImageView
+            android:id="@+id/apply_process_icon03"
+            android:layout_width="@dimen/x58"
+            android:layout_height="@dimen/y58"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_centerVertical="true"
+            android:src="@drawable/lc_icon_03"/>
+
+        <TextView
+            android:id="@+id/apply_process_text03"
+            android:layout_toRightOf="@id/apply_process_icon03"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_marginTop="@dimen/y28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3.电话预约及材料准备"
+            android:textColor="#444444"
+            android:textSize="@dimen/x28"/>
+
+        <TextView
+            android:layout_toRightOf="@id/apply_process_icon03"
+            android:layout_below="@id/apply_process_text03"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_marginTop="@dimen/y5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="提交申请"
+            android:textColor="#BBB"
+            android:textSize="@dimen/x24"/>
+
+    </RelativeLayout>
+
+    <View style="@style/horizontalLine"/>
+<!--4-->
+    <RelativeLayout
+        android:background="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120">
+
+        <ImageView
+            android:id="@+id/apply_process_icon04"
+            android:layout_width="@dimen/x58"
+            android:layout_height="@dimen/y58"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_centerVertical="true"
+            android:src="@drawable/lc_icon_04"/>
+
+        <TextView
+            android:id="@+id/apply_process_text04"
+            android:layout_toRightOf="@id/apply_process_icon04"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_marginTop="@dimen/y28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.业务办理"
+            android:textColor="#444444"
+            android:textSize="@dimen/x28"/>
+
+        <TextView
+            android:layout_toRightOf="@id/apply_process_icon04"
+            android:layout_below="@id/apply_process_text04"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_marginTop="@dimen/y5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="家访、公正、抵押，最快当天可完成"
+            android:textColor="#BBB"
+            android:textSize="@dimen/x24"/>
+
+    </RelativeLayout>
+
+    <View style="@style/horizontalLine"/>
+<!--5-->
+    <RelativeLayout
+        android:background="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120">
+
+        <ImageView
+            android:id="@+id/apply_process_icon05"
+            android:layout_width="@dimen/x58"
+            android:layout_height="@dimen/y58"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_centerVertical="true"
+            android:src="@drawable/lc_icon_05"/>
+
+        <TextView
+            android:id="@+id/apply_process_text05"
+            android:layout_toRightOf="@id/apply_process_icon05"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_marginTop="@dimen/y28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5.完成贷款"
+            android:textColor="#444444"
+            android:textSize="@dimen/x28"/>
+
+        <TextView
+            android:layout_toRightOf="@id/apply_process_icon05"
+            android:layout_below="@id/apply_process_text05"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_marginTop="@dimen/y5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="快速放款，满足客户资金需求"
+            android:textColor="#BBB"
+            android:textSize="@dimen/x24"/>
+
+    </RelativeLayout>
+
+    <View style="@style/horizontalLine"/>
+<!--6-->
+    <RelativeLayout
+        android:background="#FFF"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120">
+
+        <ImageView
+            android:id="@+id/apply_process_icon06"
+            android:layout_width="@dimen/x58"
+            android:layout_height="@dimen/y58"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_centerVertical="true"
+            android:src="@drawable/lc_icon_06"/>
+
+        <TextView
+            android:id="@+id/apply_process_text06"
+            android:layout_toRightOf="@id/apply_process_icon06"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_marginTop="@dimen/y28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6.还款"
+            android:textColor="#444444"
+            android:textSize="@dimen/x28"/>
+
+        <TextView
+            android:layout_toRightOf="@id/apply_process_icon06"
+            android:layout_below="@id/apply_process_text06"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_marginTop="@dimen/y5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="按期还款，做诚信客户"
+            android:textColor="#BBB"
+            android:textSize="@dimen/x24"/>
+
+    </RelativeLayout>
+
+    <View style="@style/horizontalLine"/>
+
+
+</LinearLayout>

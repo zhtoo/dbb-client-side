@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
 import com.hs.dbbclientside.R;
 import com.hs.dbbclientside.databinding.ActivityCreditQueriesBinding;
@@ -27,7 +28,12 @@ public class CreditQueriesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_credit_queries);
         StatusBarUtils.setColor(this, Color.parseColor("#628F9D"));
-        //StatusBarUtils.measureTitleBarHeight(binding.getRoot(), this);
+        StatusBarUtils.measureTitleBarHeight(binding.getRoot(), this);
         binding.setViewModle(new CreditQueriesViewModle(binding, this));
+    }
+
+
+    public void back(View view){
+        finish();
     }
 }

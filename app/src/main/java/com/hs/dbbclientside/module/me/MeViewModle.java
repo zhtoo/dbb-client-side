@@ -1,6 +1,8 @@
 package com.hs.dbbclientside.module.me;
 
 import android.content.Context;
+import android.content.Intent;
+import android.view.View;
 
 import com.hs.dbbclientside.databinding.FragmentMeBinding;
 
@@ -21,5 +23,13 @@ public class MeViewModle {
         this.context = context;
     }
 
+    public void go2Bill(View view){
+        context.startActivity(new Intent(context,BillActivity.class));
+    }
+
+
+    public void go2ApplyRecord(View view){
+        context.startActivity(new Intent(context,ApplyRecordActivity.class));
+    }
 
 }

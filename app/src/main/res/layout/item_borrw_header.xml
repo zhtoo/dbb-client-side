@@ -15,6 +15,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="@dimen/y240"
+            android:scaleType="centerCrop"
             android:src="@drawable/ic_borrow_banner"/>
 
         <RelativeLayout
