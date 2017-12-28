@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.hs.dbbclientside.module.me.PersonalInformationViewModel"/>
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y98"
+            android:background="#FFF">
+
+            <FrameLayout
+                android:layout_width="@dimen/x98"
+                android:layout_height="@dimen/y98">
+
+                <ImageView
+                    android:layout_width="@dimen/x18"
+                    android:layout_height="@dimen/y31"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_arrow_left"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="个人信息"
+                android:textColor="#222222"
+                android:textSize="@dimen/x36"/>
+
+
+            <FrameLayout
+                android:id="@+id/personal_info_save_btn"
+                android:layout_width="@dimen/x98"
+                android:layout_height="@dimen/y98"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:id="@+id/personal_info_save_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="保存"
+                    android:textColor="#30B2EE"
+                    android:textSize="@dimen/x28"
+                    />
+
+            </FrameLayout>
+
+
+        </RelativeLayout>
+
+        <View style="@style/horizontalLine"/>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--布局内容-->
+
+                <!--个人信息-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y80"
+                    android:background="#F5F7F6"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/x30"
+                    android:text="个人信息"
+                    android:textColor="#999"
+                    android:textSize="@dimen/x28"/>
+
+                <View style="@style/horizontalLine"/>
+                <!--姓名-->
+                <RelativeLayout
+                    style="@style/usre_info_content">
+
+                    <TextView
+                        style="@style/user_info_text"
+                        android:text="姓名"/>
+
+                    <EditText
+                        style="@style/user_info_edit"
+                        android:hint="请输入姓名"/>
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/horizontalLine"/>
+                <!--手机号-->
+                <RelativeLayout
+                    style="@style/usre_info_content">
+
+                    <TextView
+                        style="@style/user_info_text"
+                        android:text="手机号"/>
+
+                    <EditText
+                        style="@style/user_info_edit"
+                        android:hint="请输入您的手机号"/>
+
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/horizontalLine"/>
+                <!--身份证号-->
+                <RelativeLayout
+                    style="@style/usre_info_content">
+
+                    <TextView
+                        style="@style/user_info_text"
+                        android:text="身份证号"/>
+
+                    <EditText
+                        style="@style/user_info_edit"
+                        android:hint="请输入您的身份证号"/>
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/horizontalLine"/>
+                <!--省份证照-->
+                <RelativeLayout
+                    style="@style/usre_info_content">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        style="@style/user_info_text"
+                        android:text="省份证照"/>
+
+
+                    <EditText
+                        android:editable="false"
+                        style="@style/user_info_edit"
+                        android:hint="请上传您的身份证照片"/>
+
+                    <ImageView
+                        style="@style/user_info_image"/>
+
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/horizontalLine"/>
+                <!--婚姻状况-->
+                <RelativeLayout
+                    style="@style/usre_info_content">
+
+                    <TextView
+                        style="@style/user_info_text"
+                        android:text="婚姻状况"/>
+
+                    <EditText
+                        android:editable="false"
+                        style="@style/user_info_edit"
+                        android:hint="请选择婚姻状况"/>
+
+                    <ImageView
+                        style="@style/user_info_image"/>
+
+                </RelativeLayout>
+
+                <View style="@style/horizontalLine"/>
+
+
+                <!--工作信息-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y80"
+                    android:background="#F5F7F6"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/x30"
+                    android:text="工作信息"
+                    android:textColor="#999"
+                    android:textSize="@dimen/x28"/>
+
+                <View style="@style/horizontalLine"/>
+
+                <!--单位性质-->
+                <RelativeLayout
+                    style="@style/usre_info_content">
+
+                    <TextView
+                        style="@style/user_info_text"
+                        android:text="单位性质"/>
+
+                    <EditText
+                        android:editable="false"
+                        android:visibility="gone"
+                        style="@style/user_info_edit"
+                        android:hint=""/>
+
+                    <ImageView
+                        style="@style/user_info_image"/>
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/horizontalLine"/>
+
+                <!--月收入-->
+                <RelativeLayout
+                    style="@style/usre_info_content">
+
+                    <TextView
+                        style="@style/user_info_text"
+                        android:text="月收入"/>
+
+                    <EditText
+                        style="@style/user_info_edit"
+                        android:hint="请输入您的收入金额"/>
+
+                </RelativeLayout>
+
+                <View style="@style/horizontalLine"/>
+
+                <!--借款人联系人信息-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y80"
+                    android:background="#F5F7F6"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/x30"
+                    android:text="借款人联系人信息"
+                    android:textColor="#999"
+                    android:textSize="@dimen/x28"/>
+
+                <View style="@style/horizontalLine"/>
+
+                <!--直系亲属联系方式-->
+                <com.hs.dbbclientside.view.ExpandableView
+                    android:id="@+id/user_info_contact1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"/>
+
+                <View
+                    style="@style/horizontalLine"/>
+
+                <!--一般联系方人-->
+                <com.hs.dbbclientside.view.ExpandableView
+                    android:id="@+id/user_info_contact2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"/>
+
+                <View style="@style/horizontalLine"/>
+                <!--居住和自有房产地址信息-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y80"
+                    android:background="#F5F7F6"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/x30"
+                    android:text="居住和自有房产地址信息"
+                    android:textColor="#999"
+                    android:textSize="@dimen/x28"/>
+
+                <View style="@style/horizontalLine"/>
+
+                <!--户籍所在地-->
+                <RelativeLayout
+                    style="@style/usre_info_content">
+
+                    <TextView
+                        style="@style/user_info_text"
+                        android:text="户籍所在地"/>
+
+                    <EditText
+                        android:editable="false"
+                        style="@style/user_info_edit"
+                        android:hint="请选择您的户籍所在地"/>
+
+                    <ImageView
+                        style="@style/user_info_image"/>
+
+                </RelativeLayout>
+                <View
+                    style="@style/horizontalLine"/>
+
+                <!--房产状况-->
+                <RelativeLayout
+                    style="@style/usre_info_content">
+
+                    <TextView
+                        style="@style/user_info_text"
+                        android:text="房产状况"/>
+
+                    <EditText
+                        android:editable="false"
+                        style="@style/user_info_edit"
+                        android:hint="请选择您的房产状况"/>
+
+
+                    <ImageView
+                        style="@style/user_info_image"/>
+
+                </RelativeLayout>
+                <View style="@style/horizontalLine"/>
+                <!--建筑面积-->
+                <RelativeLayout
+                    style="@style/usre_info_content">
+
+                    <TextView
+                        style="@style/user_info_text"
+                        android:text="建筑面积"/>
+
+                    <EditText
+                        style="@style/user_info_edit"
+                        android:hint="请输入您的房产建筑面积"/>
+
+                </RelativeLayout>
+                <View style="@style/horizontalLine"/>
+                <!--月收入-->
+                <RelativeLayout
+                    style="@style/usre_info_content">
+
+                    <EditText
+                        android:layout_marginLeft="@dimen/x30"
+                        style="@style/user_info_edit"
+                        android:hint="请输入详细居住地址"/>
+
+                </RelativeLayout>
+                <View style="@style/horizontalLine"/>
+                <!--月收入-->
+                <RelativeLayout
+                    style="@style/usre_info_content">
+
+                    <EditText
+                        android:layout_marginLeft="@dimen/x30"
+                        style="@style/user_info_edit"
+                        android:hint="请输入您的自有房产地址"/>
+
+                </RelativeLayout>
+                <View style="@style/horizontalLine"/>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+</layout>

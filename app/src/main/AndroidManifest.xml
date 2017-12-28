@@ -27,6 +27,7 @@
         <activity android:name=".module.borrow.ApplyActivity"/>
         <activity android:name=".module.me.BillActivity"/>
         <activity android:name=".module.me.ApplyRecordActivity"/>
+        <activity android:name=".module.me.PersonalInformationActivity"/>
         <activity android:name=".module.help.ApplyProcessActivtiy"/>
         <activity android:name=".module.help.ForecastToolsActivity"/>
     </application>

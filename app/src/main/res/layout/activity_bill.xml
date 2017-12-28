@@ -46,168 +46,109 @@
         </RelativeLayout>
 
 
-        <RelativeLayout
-            android:background="#ECF3FD"
+        <android.support.v4.widget.NestedScrollView
             android:layout_width="match_parent"
-            android:layout_height="@dimen/y543">
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-            <TextView
-                android:layout_marginTop="@dimen/y66"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:textSize="@dimen/x28"
-                android:textColor="#547DAD"
-                android:text="2017年12月"/>
+                <RelativeLayout
+                    android:background="#ECF3FD"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y543">
 
+                    <TextView
+                        android:id="@+id/bill_year"
+                        android:layout_marginTop="@dimen/y66"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="@dimen/x28"
+                        android:textColor="#547DAD"
+                        android:text="2017年12月"/>
 
-            <ImageView
-                android:layout_marginTop="@dimen/y188"
-                android:layout_width="@dimen/x60"
-                android:layout_height="@dimen/y60"
-                android:layout_centerHorizontal="true"
-                android:textSize="@dimen/x28"
-                android:textColor="#547DAD"
-                android:src="@drawable/zd_icon_01"/>
-
-
-            <TextView
-                android:layout_marginTop="@dimen/y290"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:textSize="@dimen/x28"
-                android:textColor="#547DAD"
-                android:text="已还款"/>
+                    <ImageView
+                        android:layout_marginLeft="@dimen/x15"
+                        android:layout_marginTop="@dimen/y80"
+                        android:layout_toRightOf="@id/bill_year"
+                        android:layout_width="@dimen/x21"
+                        android:layout_height="@dimen/y12"
+                        android:src="@drawable/zd_btn_01"/>
 
 
-            <TextView
-                android:layout_marginTop="@dimen/y290"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_marginLeft="@dimen/x30"
-                android:layout_marginBottom="@dimen/y80"
-                android:textSize="@dimen/x28"
-                android:textColor="#547DAD"
-                android:text="已还金额"/>
+                    <ImageView
+                        android:layout_marginTop="@dimen/y188"
+                        android:layout_width="@dimen/x60"
+                        android:layout_height="@dimen/y60"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="@dimen/x28"
+                        android:textColor="#547DAD"
+                        android:src="@drawable/zd_icon_01"/>
 
 
-
-            <TextView
-                android:layout_marginTop="@dimen/y290"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginRight="@dimen/x30"
-                android:layout_marginBottom="@dimen/y80"
-                android:textSize="@dimen/x28"
-                android:textColor="#547DAD"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentRight="true"
-                android:text="￥ 12345654.78"/>
+                    <TextView
+                        android:layout_marginTop="@dimen/y290"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="@dimen/x28"
+                        android:textColor="#547DAD"
+                        android:text="已还款"/>
 
 
-        </RelativeLayout>
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/y100"
-            android:gravity="center_vertical"
-            android:textColor="#999"
-            android:textSize="@dimen/x28"
-            android:paddingLeft="@dimen/x30"
-            android:text="本月账单2笔,共1345.91元"/>
-
-        <View
-           style="@style/horizontalLine"/>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/y100"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/bill_type"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="@dimen/x28"
-                android:textColor="#222"
-                android:layout_marginLeft="@dimen/x30"
-                android:text="汇商贷"/>
-
-
-            <TextView
-                android:layout_toRightOf="@id/bill_type"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="@dimen/x28"
-                android:textColor="#222"
-                android:layout_marginLeft="@dimen/x122"
-                android:text="12/18期"/>
+                    <TextView
+                        android:layout_marginTop="@dimen/y290"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/x30"
+                        android:layout_marginBottom="@dimen/y80"
+                        android:textSize="@dimen/x28"
+                        android:textColor="#547DAD"
+                        android:text="已还金额"/>
 
 
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="@dimen/x28"
-                android:layout_alignParentRight="true"
-                android:textColor="#222"
-                android:layout_marginRight="@dimen/x30"
-                android:text="￥ 1345.91"/>
+                    <TextView
+                        android:layout_marginTop="@dimen/y290"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginRight="@dimen/x30"
+                        android:layout_marginBottom="@dimen/y80"
+                        android:textSize="@dimen/x28"
+                        android:textColor="#547DAD"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:text="￥ 12345654.78"/>
 
 
-
-        </RelativeLayout>
-
-        <View
-            style="@style/horizontalLine"/>
+                </RelativeLayout>
 
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/y100"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y100"
+                    android:gravity="center_vertical"
+                    android:textColor="#999"
+                    android:textSize="@dimen/x28"
+                    android:paddingLeft="@dimen/x30"
+                    android:text="本月账单2笔,共1345.91元"/>
 
-            <TextView
-                android:id="@+id/bill_type1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="@dimen/x28"
-                android:textColor="#222"
-                android:layout_marginLeft="@dimen/x30"
-                android:text="汇民贷"/>
+                <View
+                    style="@style/horizontalLine"/>
 
-
-            <TextView
-                android:layout_toRightOf="@id/bill_type1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="@dimen/x28"
-                android:textColor="#222"
-                android:layout_marginLeft="@dimen/x122"
-                android:text="12/18期"/>
+                <LinearLayout
+                    android:id="@+id/bill_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"/>
 
 
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="@dimen/x28"
-                android:layout_alignParentRight="true"
-                android:textColor="#222"
-                android:layout_marginRight="@dimen/x30"
-                android:text="￥ 1345.91"/>
-
-
-
-        </RelativeLayout>
-        <View
-            style="@style/horizontalLine"/>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
 
 
     </LinearLayout>

@@ -14,7 +14,7 @@
                   android:layout_width="match_parent"
                   android:layout_height="match_parent"
                   android:orientation="vertical">
-
+        <!--标题-->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/y98"
@@ -45,12 +45,196 @@
 
         <View style="@style/horizontalLine"/>
 
+        <View
+            style="@style/horizontalLine"
+            android:layout_height="@dimen/y15"
+            android:background="#F5F7F6"/>
+
+        <View style="@style/horizontalLine"/>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--布局内容-->
+                <!--借款金额-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y120"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
 
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x30"
+                        android:text="借款金额"
+                        android:textColor="#444"
+                        android:textSize="@dimen/x28"/>
+
+                    <View
+                        style="@style/autoFillStyle"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/x15"
+                        android:background="@null"
+                        android:hint="请输入金额"
+                        android:textColor="#FECF70"
+                        android:textColorHint="#FECF70"
+                        android:textCursorDrawable="@drawable/bg_edit_cursor"
+                        android:textSize="@dimen/x30"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/x30"
+                        android:text="元"
+                        android:textColor="#FECF70"
+                        android:textSize="@dimen/x30"/>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/horizontalLine"/>
+
+                <!--借款期限-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y120"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
 
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x30"
+                        android:text="借款期限"
+                        android:textColor="#444"
+                        android:textSize="@dimen/x28"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x15"
+                        android:text="(90天)"
+                        android:textColor="#999"
+                        android:textSize="@dimen/x28"/>
+
+                    <View
+                        style="@style/autoFillStyle"/>
 
 
+                    <ImageView
+                        android:layout_width="@dimen/x27"
+                        android:layout_height="@dimen/y14"
+                        android:layout_marginRight="@dimen/x30"
+                        android:src="@drawable/yg_icon_02"/>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/horizontalLine"/>
+
+                <!--年化利率-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y120"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x30"
+                        android:text="年化利率"
+                        android:textColor="#444"
+                        android:textSize="@dimen/x28"/>
+
+                    <View
+                        style="@style/autoFillStyle"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/x15"
+                        android:background="@null"
+                        android:hint="请输入利率"
+                        android:textColor="#FECF70"
+                        android:textColorHint="#FECF70"
+                        android:textCursorDrawable="@drawable/bg_edit_cursor"
+                        android:textSize="@dimen/x30"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/x30"
+                        android:text="%"
+                        android:textColor="#FECF70"
+                        android:textSize="@dimen/x30"/>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/horizontalLine"/>
+
+
+                <View
+                    style="@style/horizontalLine"
+                    android:layout_height="@dimen/y15"
+                    android:background="#F6F8F7"/>
+
+                <View style="@style/horizontalLine"/>
+
+
+                <!--年化利率-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y90"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/x8"
+                        android:layout_height="@dimen/y36"
+                        android:layout_marginLeft="@dimen/x30"
+
+                        android:src="@drawable/yg_icon_01"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x15"
+                        android:text="还款明细"
+                        android:textColor="#222"
+                        android:textSize="@dimen/x34"/>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/horizontalLine"/>
+
+
+                <LinearLayout
+                    android:id="@+id/forecast_tool_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"/>
+
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
 
     </LinearLayout>
 

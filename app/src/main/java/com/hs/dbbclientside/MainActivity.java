@@ -1,6 +1,5 @@
 package com.hs.dbbclientside;
 
-import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -11,7 +10,6 @@ import android.view.View;
 
 import com.hs.dbbclientside.databinding.ActivityMainBinding;
 import com.hs.dbbclientside.util.StatusBarUtils;
-import com.zht.expandableview.ExampleActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -40,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     public void go2Example(View view) {
 
 
-        startActivity(new Intent(this, ExampleActivity.class));
+
 
     }
 

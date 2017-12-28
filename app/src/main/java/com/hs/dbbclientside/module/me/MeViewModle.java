@@ -32,4 +32,8 @@ public class MeViewModle {
         context.startActivity(new Intent(context,ApplyRecordActivity.class));
     }
 
+    public void go2PersonalInfo(View view){
+        context.startActivity(new Intent(context,PersonalInformationActivity.class));
+    }
+
 }

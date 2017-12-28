@@ -30,7 +30,7 @@ public class HomeFragment extends BaseFragment {
         measureTitleBarHeight(binding.getRoot());
      //   binding.executePendingBindings();//此方法必须执行在UI线程，当绑定的数据修改时更新视图
 
-        viewModle = new HomeViewModle(binding);
+        viewModle = new HomeViewModle(getContext(),binding);
         binding.setViewModel(viewModle);
         return binding.getRoot();
     }

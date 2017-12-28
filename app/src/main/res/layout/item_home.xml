@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="string"
+            type="String"/>
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y39"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x35"
+                    android:src="@drawable/ic_home_product_dot"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x15"
+                    android:text="慧明消费贷"
+                    android:textColor="#444444"
+                    android:textSize="@dimen/x34"/>
+
+
+                <View style="@style/autoFillStyle"/>
+
+                <Button
+                    android:layout_width="@dimen/x150"
+                    android:layout_height="@dimen/y50"
+                    android:layout_marginRight="@dimen/x15"
+                    android:background="@drawable/ic_home_product_button"
+                    android:text="了解详情"
+                    android:textColor="#fff"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x64"
+                android:layout_marginTop="@dimen/y28"
+                android:text="全民老百姓都可以贷款的方案"
+                android:textColor="#888888"
+                android:textSize="@dimen/x28"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/y40"
+                android:layout_marginLeft="@dimen/x64"
+                android:layout_marginTop="@dimen/y30"
+                android:text="高中以上文凭、能提供银行卡发薪证明"
+                android:textColor="#888888"
+                android:textSize="@dimen/x28"/>
+
+        </LinearLayout>
+
+        <View style="@style/horizontalLine"/>
+
+    </LinearLayout>
+</layout>

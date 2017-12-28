@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="string"
+            type="String"/>
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="@dimen/x122"
+                  android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x120"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_forecast_tool_periods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x30"
+                android:text="第一期"
+                android:textColor="#444"
+                android:textSize="@dimen/x30"/>
+
+            <View
+                style="@style/autoFillStyle"/>
+
+            <TextView
+                android:id="@+id/item_forecast_tool_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textColor="#FECF70"
+                android:textSize="@dimen/x30"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/x30"
+                android:text="元"
+                android:textColor="#444"
+                android:textSize="@dimen/x30"/>
+
+
+        </LinearLayout>
+
+
+        <View
+            style="@style/horizontalLine"/>
+    </LinearLayout>
+
+
+</layout>

@@ -255,6 +255,8 @@
 
 
         <LinearLayout
+
+            android:onClick="@{viewModle.go2PersonalInfo}"
             android:background="#fff"
             android:layout_width="match_parent"
             android:layout_height="@dimen/y108"

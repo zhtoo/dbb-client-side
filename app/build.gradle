@@ -52,8 +52,6 @@ dependencies {
     //添加支持 dex突破65535的限制 在MyApplication需要继承MultiDexApplication
     //存在弊端。
     compile 'com.android.support:multidex:1.0.1'
-    //可扩展的View的依赖
-    compile(name: 'expandableview', ext: 'aar')
     //首页Banner的依赖
     compile(name: 'Banner', ext: 'aar')
     //glide图片加载框架

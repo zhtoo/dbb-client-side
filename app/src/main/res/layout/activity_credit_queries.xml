@@ -174,10 +174,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@null"
+                android:textCursorDrawable="@drawable/bg_edit_cursor"
                 android:hint="6-16位数字字母"
                 android:textColor="#999999"
                 android:textColorHint="#BBBBBB"
-                android:textCursorDrawable="@drawable/bg_edit_cursor"
                 android:textSize="@dimen/x28"/>
 
         </LinearLayout>

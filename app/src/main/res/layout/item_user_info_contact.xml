@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.hs.dbbclientside.module.me.PersonalInformationViewModel"/>
+    </data>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="#F5F5F5"
+                  android:orientation="vertical">
+
+        <View
+            style="@style/horizontalLine"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y90">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x30"
+                android:text="姓名"
+                android:textColor="#666666"
+                android:textSize="@dimen/x28"/>
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x30"
+                android:background="@null"
+                android:hint="请输入联系人姓名"
+                android:textCursorDrawable="@drawable/bg_edit_cursor"
+                android:textSize="@dimen/x28"/>
+
+        </RelativeLayout>
+
+        <View
+            style="@style/horizontalLine"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y90">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x30"
+                android:text="关系"
+                android:textColor="#666666"
+                android:textSize="@dimen/x28"/>
+
+            <ImageView
+                android:id="@+id/my_arrows"
+                android:layout_width="@dimen/x12"
+                android:layout_height="@dimen/x21"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x30"
+                android:src="@drawable/ic_borrow_arrows"/>
+
+
+            <TextView
+                android:id="@+id/relationship"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/my_arrows"
+                android:text="请选择"
+                android:textSize="@dimen/x28"/>
+
+
+        </RelativeLayout>
+
+        <View
+            style="@style/horizontalLine"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y90">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x30"
+                android:text="电话"
+                android:textColor="#666666"
+                android:textSize="@dimen/x28"/>
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x30"
+                android:background="@null"
+                android:hint="请输入联系人电话"
+                android:textCursorDrawable="@drawable/bg_edit_cursor"
+                android:textSize="@dimen/x28"/>
+
+        </RelativeLayout>
+
+        <View
+            style="@style/horizontalLine"/>
+
+        <View
+            style="@style/horizontalLine"
+            android:layout_height="@dimen/y15"
+            android:background="#F5F7F6"/>
+
+
+    </LinearLayout>
+
+
+</layout>

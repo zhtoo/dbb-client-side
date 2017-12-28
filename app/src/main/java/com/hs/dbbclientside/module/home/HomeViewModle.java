@@ -1,9 +1,14 @@
 package com.hs.dbbclientside.module.home;
 
+import android.content.Context;
+import android.databinding.DataBindingUtil;
 import android.text.TextUtils;
+import android.view.LayoutInflater;
+import android.widget.LinearLayout;
 
 import com.hs.dbbclientside.R;
 import com.hs.dbbclientside.databinding.FragmentHomeBinding;
+import com.hs.dbbclientside.databinding.ItemHomeBinding;
 import com.hs.dbbclientside.util.ToastUtil;
 import com.zht.banner.banner.CBViewHolderCreator;
 import com.zht.banner.banner.NetworkImageHolderView;
@@ -21,9 +26,13 @@ import java.util.List;
 
 public class HomeViewModle {
 
+    private Context context;
     private FragmentHomeBinding binding;
 
-    public HomeViewModle(FragmentHomeBinding binding) {
+
+
+    public HomeViewModle(Context context, FragmentHomeBinding binding) {
+        this.context = context;
         this.binding = binding;
         initData();
     }
@@ -45,6 +54,26 @@ public class HomeViewModle {
             bannerList.add(bannerModel);
         }
         bindBanner(bannerList);
+        initItemList();
+    }
+
+    /**
+     * 初始化列表条目
+     */
+    private void initItemList() {
+        //NestedScrollView下的LinearLayout
+        LinearLayout layout = binding.homeContent;
+        layout.removeAllViews();
+        for (int i = 0; i < 6; i++) {
+            ItemHomeBinding binding =
+                    DataBindingUtil.inflate(LayoutInflater.from(context),
+                            R.layout.item_home, null, false);
+
+            //动态添加 子View
+            layout.addView(binding.getRoot(), i);
+        }
+
+
     }
 
     /**

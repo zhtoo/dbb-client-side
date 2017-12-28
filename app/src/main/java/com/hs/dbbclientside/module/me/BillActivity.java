@@ -28,6 +28,6 @@ public class BillActivity extends AppCompatActivity {
         StatusBarUtils.setColor(this, Color.parseColor("#ECF3FD"));
         StatusBarUtils.measureTitleBarHeight(binding.getRoot(), this);
 
-
+        binding.setViewModle(new BillViewModle(this,binding));
     }
 }
