@@ -95,7 +95,13 @@
                         android:text="姓名"/>
 
                     <EditText
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
                         style="@style/user_info_edit"
+                        android:id="@+id/personal_name"
+                        android:text="@{viewModel.name}"
+                        app:list="@{viewModel.edList}"
+                        app:watcher="@{viewModel.watcher}"
+                        android:onFocusChange="@{viewModel.focusChange}"
                         android:hint="请输入姓名"/>
 
                 </RelativeLayout>
@@ -112,6 +118,7 @@
 
                     <EditText
                         style="@style/user_info_edit"
+                        android:text="@={viewModel.phone}"
                         android:hint="请输入您的手机号"/>
 
 

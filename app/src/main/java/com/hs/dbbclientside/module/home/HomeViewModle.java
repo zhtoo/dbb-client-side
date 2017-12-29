@@ -29,14 +29,11 @@ public class HomeViewModle {
     private Context context;
     private FragmentHomeBinding binding;
 
-
-
     public HomeViewModle(Context context, FragmentHomeBinding binding) {
         this.context = context;
         this.binding = binding;
         initData();
     }
-
 
     private void initData() {
         List<BannerModel> bannerList = new ArrayList<>();
@@ -72,8 +69,6 @@ public class HomeViewModle {
             //动态添加 子View
             layout.addView(binding.getRoot(), i);
         }
-
-
     }
 
     /**
@@ -109,7 +104,6 @@ public class HomeViewModle {
                 // 设置两个点图片作为翻页指示器，不设置则没有指示器，可以根据自己需求自行配合自己的指示器
                 .setPageIndicator(new int[]{R.mipmap.ic_page_indicator, R.mipmap.ic_page_indicator_focused});
     }
-
 
 
 
