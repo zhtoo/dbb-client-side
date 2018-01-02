@@ -6,8 +6,8 @@
     <data>
 
         <variable
-            name="viewModle"
-            type="com.hs.dbbclientside.module.me.MeViewModle"/>
+            name="viewModel"
+            type="com.hs.dbbclientside.module.me.MeViewModel"/>
 
     </data>
 
@@ -92,7 +92,7 @@
 
         <!--账单-->
         <LinearLayout
-            android:onClick="@{viewModle.go2Bill}"
+            android:onClick="@{viewModel.go2Bill}"
             android:background="#fff"
             android:layout_width="match_parent"
             android:layout_height="@dimen/y108"
@@ -214,7 +214,7 @@
 
         <!--申请记录-->
         <LinearLayout
-            android:onClick="@{viewModle.go2ApplyRecord}"
+            android:onClick="@{viewModel.go2ApplyRecord}"
             android:background="#fff"
             android:layout_width="match_parent"
             android:layout_height="@dimen/y108"
@@ -256,7 +256,7 @@
 
         <LinearLayout
 
-            android:onClick="@{viewModle.go2PersonalInfo}"
+            android:onClick="@{viewModel.go2PersonalInfo}"
             android:background="#fff"
             android:layout_width="match_parent"
             android:layout_height="@dimen/y108"

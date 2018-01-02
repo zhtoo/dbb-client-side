@@ -29,7 +29,7 @@ public class CreditQueriesActivity extends AppCompatActivity {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_credit_queries);
         StatusBarUtils.setColor(this, Color.parseColor("#628F9D"));
         StatusBarUtils.measureTitleBarHeight(binding.getRoot(), this);
-        binding.setViewModle(new CreditQueriesViewModle(binding, this));
+        binding.setViewModle(new CreditQueriesViewModel(binding, this));
     }
 
 

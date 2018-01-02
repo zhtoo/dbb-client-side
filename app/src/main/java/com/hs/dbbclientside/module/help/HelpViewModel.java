@@ -13,12 +13,12 @@ import com.hs.dbbclientside.databinding.FragmentHelpBinding;
  * @describe:
  */
 
-public class HelpViewModle {
+public class HelpViewModel {
 
     private FragmentHelpBinding binding;
     private Context context;
 
-    public HelpViewModle(FragmentHelpBinding binding, Context context) {
+    public HelpViewModel(FragmentHelpBinding binding, Context context) {
         this.binding = binding;
         this.context = context;
     }

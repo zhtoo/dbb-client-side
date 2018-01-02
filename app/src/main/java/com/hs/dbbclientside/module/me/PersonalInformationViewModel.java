@@ -4,6 +4,7 @@ import android.content.Context;
 import android.databinding.BaseObservable;
 import android.databinding.Bindable;
 import android.databinding.ObservableField;
+import android.support.v4.app.FragmentManager;
 import android.view.View;
 import android.widget.EditText;
 
@@ -13,6 +14,7 @@ import com.hs.dbbclientside.util.EditTextFormat;
 import com.hs.dbbclientside.util.InputCheck;
 import com.hs.dbbclientside.util.ToastUtil;
 import com.hs.dbbclientside.view.ExpandableView;
+import com.zht.bottomdialog.SelectBottomDialog;
 
 import java.util.LinkedList;
 
@@ -27,8 +29,27 @@ public class PersonalInformationViewModel extends BaseObservable {
 
     private Context context;
     private ActivityPersonalInformationBinding binding;
+    private   FragmentManager fragmentManager ;
 
     public String name;
+
+    public PersonalInformationViewModel(Context context, ActivityPersonalInformationBinding binding,
+                                        FragmentManager fragmentManager) {
+        this.context = context;
+        this.binding = binding;
+        this.fragmentManager = fragmentManager;
+        init();
+
+        binding.personalInfoSaveBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                //setPhone("13517194559");
+                ToastUtil.showToast(phone);
+
+            }
+        });
+    }
 
     @Bindable
     public String getPhone() {
@@ -53,7 +74,6 @@ public class PersonalInformationViewModel extends BaseObservable {
 
                 //setPhone("13517194559");
                 ToastUtil.showToast(phone);
-
 
             }
         });
@@ -101,6 +121,30 @@ public class PersonalInformationViewModel extends BaseObservable {
 
         }
     }
+
+    /////////////////////////////////////////////////////////////////////
+    //////处理点击事件
+    /////////////////////////////////////////////////////////////////////
+
+    public  void  onIdCardClick(View view){
+        SelectBottomDialog dialog = new SelectBottomDialog();
+        dialog.setDialogTextColor(R.color.dialog_text_color);//#63A0F4
+        dialog.setDialogTextSize(15);
+        dialog.setCancelTextColor(R.color.dialog_text_color);
+        dialog.setCancelTextSize(15);
+
+        dialog.setItemStrings(context, new String[]{"拍照", "从相册中选择"});
+        dialog.show(fragmentManager);
+        dialog.setOnClickListener(new SelectBottomDialog.onItemClickListener() {
+            @Override
+            public void onClick(String text) {
+               binding.usreInfoIdCard.setText(text);
+            }
+        });
+    }
+
+
+
 }
 
 

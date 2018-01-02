@@ -13,16 +13,16 @@ import com.hs.dbbclientside.databinding.ActivityApplyIntroduceBinding;
  * @describe:
  */
 
-public class ApplyIntroduceViewModle {
+public class ApplyIntroduceViewModel {
 
     private Context context;
     private ActivityApplyIntroduceBinding binding;
 
-    public ApplyIntroduceViewModle(ActivityApplyIntroduceBinding binding) {
+    public ApplyIntroduceViewModel(ActivityApplyIntroduceBinding binding) {
         this.binding = binding;
     }
 
-    public ApplyIntroduceViewModle(Context context, ActivityApplyIntroduceBinding binding) {
+    public ApplyIntroduceViewModel(Context context, ActivityApplyIntroduceBinding binding) {
         this.context = context;
         this.binding = binding;
     }

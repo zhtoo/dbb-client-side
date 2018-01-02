@@ -5,8 +5,8 @@
     <data>
 
         <variable
-            name="viewModle"
-            type="com.hs.dbbclientside.module.borrow.ApplyIntroduceViewModle"/>
+            name="viewModel"
+            type="com.hs.dbbclientside.module.borrow.ApplyIntroduceViewModel"/>
 
 
     </data>

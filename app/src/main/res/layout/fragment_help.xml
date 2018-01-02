@@ -3,8 +3,8 @@
 
     <data>
         <variable
-            name="viewModle"
-            type="com.hs.dbbclientside.module.help.HelpViewModle"/>
+            name="viewModel"
+            type="com.hs.dbbclientside.module.help.HelpViewModel"/>
 
     </data>
 
@@ -59,7 +59,7 @@
             <View style="@style/verticalLine"/>
 
             <RelativeLayout
-                android:onClick="@{viewModle.go2CreditQueries}"
+                android:onClick="@{viewModel.go2CreditQueries}"
                 android:layout_width="1dp"
                 android:layout_height="@dimen/y249"
                 android:layout_weight="1">
@@ -125,7 +125,7 @@
             <View style="@style/verticalLine"/>
 
             <RelativeLayout
-                android:onClick="@{viewModle.go2ForecastTools}"
+                android:onClick="@{viewModel.go2ForecastTools}"
                 android:layout_width="1dp"
                 android:layout_height="@dimen/y249"
                 android:layout_weight="1">
@@ -188,7 +188,7 @@
             <View style="@style/verticalLine"/>
 
             <RelativeLayout
-                android:onClick="@{viewModle.go2ApplyProcess}"
+                android:onClick="@{viewModel.go2ApplyProcess}"
                 android:layout_width="1dp"
                 android:layout_height="@dimen/y249"
                 android:layout_weight="1">

@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
     private FragmentTabHost tabhost;
     private FragmentManager mSupportFragmentManager;
-    private MainViewModle viewModel;
+    private MainViewModel viewModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         //  binding.mainTestSkip.setText("去看一下我们例子！！！");
         tabhost = (FragmentTabHost) findViewById(android.R.id.tabhost);
         mSupportFragmentManager = getSupportFragmentManager();
-        viewModel = new MainViewModle(this,binding, mSupportFragmentManager, tabhost);
+        viewModel = new MainViewModel(this,binding, mSupportFragmentManager, tabhost);
         binding.setViewModel(viewModel);
     }
 

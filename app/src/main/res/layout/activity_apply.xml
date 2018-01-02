@@ -4,8 +4,8 @@
     <data>
 
         <variable
-            name="viewModle"
-            type="com.hs.dbbclientside.module.borrow.ApplyViewModle"/>
+            name="viewModel"
+            type="com.hs.dbbclientside.module.borrow.ApplyViewModel"/>
 
     </data>
 

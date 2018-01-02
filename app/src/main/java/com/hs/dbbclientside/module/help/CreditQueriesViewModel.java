@@ -11,13 +11,13 @@ import com.hs.dbbclientside.databinding.ActivityCreditQueriesBinding;
  * @describe:
  */
 
-public class CreditQueriesViewModle {
+public class CreditQueriesViewModel {
 
    private ActivityCreditQueriesBinding binding;
    private Context context;
 
 
-    public CreditQueriesViewModle(ActivityCreditQueriesBinding binding, Context context) {
+    public CreditQueriesViewModel(ActivityCreditQueriesBinding binding, Context context) {
         this.binding = binding;
         this.context = context;
     }

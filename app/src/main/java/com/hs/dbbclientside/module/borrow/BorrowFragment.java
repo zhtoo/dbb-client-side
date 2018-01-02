@@ -25,7 +25,7 @@ public class BorrowFragment extends BaseFragment {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_borrow, container, false);
 
         StatusBarUtils.measureTitleBarHeight(binding.getRoot(),getContext());
-        binding.setViewModel(new BorrowViewModle(binding,getContext()));
+        binding.setViewModel(new BorrowViewModel(binding,getContext()));
         return binding.getRoot();
     }
 

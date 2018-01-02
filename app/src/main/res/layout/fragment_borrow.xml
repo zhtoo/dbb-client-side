@@ -6,7 +6,7 @@
 
         <variable
             name="viewModel"
-            type="com.hs.dbbclientside.module.borrow.BorrowViewModle"/>
+            type="com.hs.dbbclientside.module.borrow.BorrowViewModel"/>
 
     </data>
 

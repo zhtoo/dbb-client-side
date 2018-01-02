@@ -13,12 +13,12 @@ import com.hs.dbbclientside.databinding.FragmentMeBinding;
  * @describe:
  */
 
-public class MeViewModle {
+public class MeViewModel {
 
     private FragmentMeBinding binding;
     private Context context;
 
-    public MeViewModle(FragmentMeBinding binding, Context context) {
+    public MeViewModel(FragmentMeBinding binding, Context context) {
         this.binding = binding;
         this.context = context;
     }

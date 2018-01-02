@@ -6,7 +6,7 @@
 
         <variable
             name="viewModel"
-            type="com.hs.dbbclientside.module.home.HomeViewModle"/>
+            type="com.hs.dbbclientside.module.home.HomeViewModel"/>
     </data>
 
 

@@ -25,7 +25,7 @@ public class HelpFragment extends BaseFragment {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_help, container, false);
 
         StatusBarUtils.measureTitleBarHeight(binding.getRoot(),getContext());
-        binding.setViewModle(new HelpViewModle(binding,getContext()));
+        binding.setViewModle(new HelpViewModel(binding,getContext()));
         return binding.getRoot();
     }
 

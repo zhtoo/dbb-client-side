@@ -22,14 +22,14 @@ import com.hs.dbbclientside.module.me.MeFragment;
  * @describe:
  */
 
-public class MainViewModle {
+public class MainViewModel {
 
     private Context context;
     private ActivityMainBinding binding;
     private FragmentManager mSupportFragmentManager;
     private FragmentTabHost tabhost;
 
-    public MainViewModle(Context context, ActivityMainBinding binding, FragmentManager mSupportFragmentManager, FragmentTabHost tabhost) {
+    public MainViewModel(Context context, ActivityMainBinding binding, FragmentManager mSupportFragmentManager, FragmentTabHost tabhost) {
         this.context = context;
         this.binding = binding;
         this.mSupportFragmentManager = mSupportFragmentManager;

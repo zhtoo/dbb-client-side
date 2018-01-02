@@ -25,7 +25,7 @@ import java.util.List;
  * @describe:
  */
 
-public class BorrowViewModle {
+public class BorrowViewModel {
 
     private FragmentBorrowBinding binding;
     private Context context;
@@ -59,7 +59,7 @@ public class BorrowViewModle {
             "享受丰收的利益",
             "感受家的感觉"};
 
-    public BorrowViewModle(FragmentBorrowBinding binding, Context context) {
+    public BorrowViewModel(FragmentBorrowBinding binding, Context context) {
         this.binding = binding;
         this.context = context;
         initRecycler();

@@ -4,6 +4,7 @@ import android.databinding.DataBindingUtil;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 
 import com.hs.dbbclientside.R;
@@ -30,7 +31,9 @@ public class PersonalInformationActivity extends AppCompatActivity {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_personal_information);
         StatusBarUtils.setColor(this, Color.parseColor("#33000000"));
         StatusBarUtils.measureTitleBarHeight(binding.getRoot(), this);
-        binding.setViewModel(new PersonalInformationViewModel(this, binding));
+        FragmentManager fragmentManager = getSupportFragmentManager();
+
+        binding.setViewModel(new PersonalInformationViewModel(this, binding,fragmentManager));
     }
 
 

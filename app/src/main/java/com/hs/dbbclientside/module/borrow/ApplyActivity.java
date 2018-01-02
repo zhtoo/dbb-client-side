@@ -26,7 +26,7 @@ public class ApplyActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         binding = DataBindingUtil.setContentView(this, R.layout.activity_apply);
-        binding.setViewModle(new ApplyViewModle(this, binding));
+        binding.setViewModle(new ApplyViewModel(this, binding));
     }
 
     public void back(View view) {

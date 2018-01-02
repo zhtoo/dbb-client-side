@@ -6,4 +6,5 @@
 
     <!--线条的颜色-->
     <color name="lineBackground">#EEEEEE</color>
+    <color name="dialog_text_color">#63A0F4</color>
 </resources>

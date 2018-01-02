@@ -24,12 +24,12 @@ import java.util.List;
  * @describe:
  */
 
-public class HomeViewModle {
+public class HomeViewModel {
 
     private Context context;
     private FragmentHomeBinding binding;
 
-    public HomeViewModle(Context context, FragmentHomeBinding binding) {
+    public HomeViewModel(Context context, FragmentHomeBinding binding) {
         this.context = context;
         this.binding = binding;
         initData();

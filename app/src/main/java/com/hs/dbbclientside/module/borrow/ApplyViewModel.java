@@ -12,13 +12,13 @@ import com.hs.dbbclientside.databinding.ActivityApplyBinding;
  * @describe:
  */
 
-public class ApplyViewModle {
+public class ApplyViewModel {
 
     private Context context ;
     private ActivityApplyBinding binding;
 
 
-    public ApplyViewModle(Context context, ActivityApplyBinding binding) {
+    public ApplyViewModel(Context context, ActivityApplyBinding binding) {
         this.context = context;
         this.binding = binding;
     }

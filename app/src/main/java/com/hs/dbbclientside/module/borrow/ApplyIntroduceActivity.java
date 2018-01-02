@@ -23,7 +23,7 @@ public class ApplyIntroduceActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_apply_introduce);
-        binding.setViewModle(new ApplyIntroduceViewModle(this,binding));
+        binding.setViewModle(new ApplyIntroduceViewModel(this,binding));
     }
 
 

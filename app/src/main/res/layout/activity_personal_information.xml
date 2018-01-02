@@ -142,24 +142,24 @@
 
                 <View
                     style="@style/horizontalLine"/>
-                <!--省份证照-->
+                <!--身份证照-->
                 <RelativeLayout
+                    android:onClick="@{viewModel.onIdCardClick}"
                     style="@style/usre_info_content">
 
                     <TextView
                         android:id="@+id/textView2"
                         style="@style/user_info_text"
-                        android:text="省份证照"/>
-
+                        android:text="身份证照"/>
 
                     <EditText
+                        android:id="@+id/usre_info_id_card"
                         android:editable="false"
                         style="@style/user_info_edit"
                         android:hint="请上传您的身份证照片"/>
 
                     <ImageView
                         style="@style/user_info_image"/>
-
 
                 </RelativeLayout>
 

@@ -16,14 +16,14 @@ import com.hs.dbbclientside.databinding.ItemBillBinding;
  * @describe:
  */
 
-public class BillViewModle {
+public class BillViewModel {
 
 
     private Context context ;
     private ActivityBillBinding binding;
 
 
-    public BillViewModle(Context context, ActivityBillBinding binding) {
+    public BillViewModel(Context context, ActivityBillBinding binding) {
         this.context = context;
         this.binding = binding;
         setScrollViewContent();

@@ -21,7 +21,7 @@ public class HomeFragment extends BaseFragment {
 
 
     private FragmentHomeBinding binding;
-    private HomeViewModle viewModle;
+    private HomeViewModel viewModle;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -30,7 +30,7 @@ public class HomeFragment extends BaseFragment {
         measureTitleBarHeight(binding.getRoot());
      //   binding.executePendingBindings();//此方法必须执行在UI线程，当绑定的数据修改时更新视图
 
-        viewModle = new HomeViewModle(getContext(),binding);
+        viewModle = new HomeViewModel(getContext(),binding);
         binding.setViewModel(viewModle);
         return binding.getRoot();
     }

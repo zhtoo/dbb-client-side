@@ -5,8 +5,8 @@
 
 
         <variable
-            name="viewModle"
-            type="com.hs.dbbclientside.module.me.BillViewModle"/>
+            name="viewModel"
+            type="com.hs.dbbclientside.module.me.BillViewModel"/>
 
 
     </data>
