@@ -26,7 +26,7 @@ public class MeFragment extends BaseFragment {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_me, container, false);
 
         StatusBarUtils.measureTitleBarHeight(binding.getRoot(),getContext());
-        binding.setViewModle(new MeViewModel(binding,getContext()));
+        binding.setViewModel(new MeViewModel(binding,getContext()));
         return binding.getRoot();
     }
 

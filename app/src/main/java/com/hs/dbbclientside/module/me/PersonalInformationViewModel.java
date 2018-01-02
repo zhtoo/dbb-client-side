@@ -1,6 +1,7 @@
 package com.hs.dbbclientside.module.me;
 
 import android.content.Context;
+import android.content.Intent;
 import android.databinding.BaseObservable;
 import android.databinding.Bindable;
 import android.databinding.ObservableField;
@@ -14,7 +15,6 @@ import com.hs.dbbclientside.util.EditTextFormat;
 import com.hs.dbbclientside.util.InputCheck;
 import com.hs.dbbclientside.util.ToastUtil;
 import com.hs.dbbclientside.view.ExpandableView;
-import com.zht.bottomdialog.SelectBottomDialog;
 
 import java.util.LinkedList;
 
@@ -127,20 +127,7 @@ public class PersonalInformationViewModel extends BaseObservable {
     /////////////////////////////////////////////////////////////////////
 
     public  void  onIdCardClick(View view){
-        SelectBottomDialog dialog = new SelectBottomDialog();
-        dialog.setDialogTextColor(R.color.dialog_text_color);//#63A0F4
-        dialog.setDialogTextSize(15);
-        dialog.setCancelTextColor(R.color.dialog_text_color);
-        dialog.setCancelTextSize(15);
-
-        dialog.setItemStrings(context, new String[]{"拍照", "从相册中选择"});
-        dialog.show(fragmentManager);
-        dialog.setOnClickListener(new SelectBottomDialog.onItemClickListener() {
-            @Override
-            public void onClick(String text) {
-               binding.usreInfoIdCard.setText(text);
-            }
-        });
+       context.startActivity(new Intent(context,UploadIdCardActivity.class));
     }
 
 

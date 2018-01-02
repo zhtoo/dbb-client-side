@@ -12,8 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"
-                  android:theme="@style/Theme.AppCompat.Light.NoActionBar"  >
+        <activity android:name=".module.guide.SplashActivity"
+                  android:theme="@style/SplashTheme"  >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,13 +21,15 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.zht.expandableview.ExampleActivity"/>
+        <activity android:name=".module.guide.GuideActivity"/>
+        <activity android:name=".MainActivity"/>
         <activity android:name=".module.help.CreditQueriesActivity"/>
         <activity android:name=".module.borrow.ApplyIntroduceActivity"/>
         <activity android:name=".module.borrow.ApplyActivity"/>
         <activity android:name=".module.me.BillActivity"/>
         <activity android:name=".module.me.ApplyRecordActivity"/>
         <activity android:name=".module.me.PersonalInformationActivity"/>
+        <activity android:name=".module.me.UploadIdCardActivity"/>
         <activity android:name=".module.help.ApplyProcessActivtiy"/>
         <activity android:name=".module.help.ForecastToolsActivity"/>
     </application>

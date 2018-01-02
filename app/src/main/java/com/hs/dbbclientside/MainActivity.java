@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTabHost;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 
 import com.hs.dbbclientside.databinding.ActivityMainBinding;
 import com.hs.dbbclientside.util.StatusBarUtils;
@@ -32,15 +31,6 @@ public class MainActivity extends AppCompatActivity {
         binding.setViewModel(viewModel);
     }
 
-
-
-
-    public void go2Example(View view) {
-
-
-
-
-    }
 
 
 }
