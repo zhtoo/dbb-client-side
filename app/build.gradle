@@ -56,6 +56,7 @@ dependencies {
     compile(name: 'Banner', ext: 'aar')
     //底部弹框的依赖
     compile(name: 'bottomdialog', ext: 'aar')
+    compile(name: 'expandablerecyclerview', ext: 'aar')
     //glide图片加载框架
     compile 'com.github.bumptech.glide:glide:3.8.0'
 

@@ -4,9 +4,9 @@ import android.databinding.DataBindingUtil;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 
 import com.hs.dbbclientside.R;
+import com.hs.dbbclientside.base.BaseActivity;
 import com.hs.dbbclientside.databinding.ActivityBillBinding;
 import com.hs.dbbclientside.util.StatusBarUtils;
 
@@ -17,7 +17,7 @@ import com.hs.dbbclientside.util.StatusBarUtils;
  * @describe:
  */
 
-public class BillActivity extends AppCompatActivity {
+public class BillActivity extends BaseActivity {
 
     private ActivityBillBinding binding;
 

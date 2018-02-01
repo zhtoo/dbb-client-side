@@ -5,9 +5,9 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentManager;
-import android.support.v7.app.AppCompatActivity;
 
 import com.hs.dbbclientside.R;
+import com.hs.dbbclientside.base.BaseActivity;
 import com.hs.dbbclientside.databinding.ActivityPersonalInformationBinding;
 import com.hs.dbbclientside.util.StatusBarUtils;
 import com.hs.dbbclientside.view.ExpandableView;
@@ -19,7 +19,7 @@ import com.hs.dbbclientside.view.ExpandableView;
  * @describe:
  */
 
-public class PersonalInformationActivity extends AppCompatActivity {
+public class PersonalInformationActivity extends BaseActivity {
 
     private ActivityPersonalInformationBinding binding;
     private ExpandableView mExpandableView1;

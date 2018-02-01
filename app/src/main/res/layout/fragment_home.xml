@@ -17,32 +17,23 @@
         android:gravity="center_vertical"
         android:orientation="vertical">
 
-        <!--搜索栏-->
-        <LinearLayout
+        <!--标题-->
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/y98"
-            android:layout_marginTop="@dimen/y5"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-
+            android:layout_height="@dimen/y90"
+            android:background="#FFF">
 
             <TextView
-                android:id="@+id/home_search"
-                android:layout_width="@dimen/x629"
-                android:layout_height="@dimen/y65"
-                android:layout_marginLeft="@dimen/x20"
-                android:background="@drawable/bg_home_search"
-                android:drawableLeft="@drawable/ic_home_search_icon"
-                android:drawablePadding="@dimen/x20"
-                android:gravity="center_vertical"
-                android:paddingLeft="@dimen/x20"
-                android:text="汇车贷"
-                android:textColor="#999999"/>
-
-            <View
-                style="@style/autoFillStyle"/>
-
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="首页"
+                android:textColor="#222222"
+                android:textSize="@dimen/x36"/>
             <RelativeLayout
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:onClick="@{viewModel.go2Message}"
                 android:layout_width="@dimen/x56"
                 android:layout_height="@dimen/y50"
                 android:layout_marginRight="@dimen/x15">
@@ -69,12 +60,12 @@
 
             </RelativeLayout>
 
-        </LinearLayout>
+        </RelativeLayout>
+
 
         <!--横线-->
         <View
-            style="@style/horizontalLine"
-            android:layout_marginTop="@dimen/y13"/>
+            style="@style/horizontalLine"/>
 
 
         <android.support.v4.widget.NestedScrollView
@@ -114,6 +105,7 @@
 
                     <!--我要借款-->
                     <RelativeLayout
+                        android:onClick="@{viewModel.go2Borrow}"
                         style="@style/home_button_container">
 
                         <TextView
@@ -166,6 +158,7 @@
 
                     <!--使用帮助-->
                     <RelativeLayout
+                        android:onClick="@{viewModel.go2UseHelp}"
                         style="@style/home_button_container">
 
                         <TextView

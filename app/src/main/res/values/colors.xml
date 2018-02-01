@@ -6,5 +6,8 @@
 
     <!--线条的颜色-->
     <color name="lineBackground">#EEEEEE</color>
+    <!--上传身份证张片弹框的字体-->
     <color name="dialog_text_color">#63A0F4</color>
+    <!--添加银行卡弹框的字体-->
+    <color name="add_bank_dialog_text_color">#666666</color>
 </resources>

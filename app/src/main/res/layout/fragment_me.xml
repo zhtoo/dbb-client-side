@@ -39,6 +39,7 @@
 
 <!--icon信息-->
         <RelativeLayout
+            android:onClick="@{viewModel.go2Setting}"
             android:layout_width="match_parent"
             android:layout_height="@dimen/y300"
             android:background="@drawable/ic_me_banner">
@@ -232,11 +233,7 @@
             <View
                 style="@style/autoFillStyle"/>
 
-            <ImageView
-                android:layout_width="@dimen/x12"
-                android:layout_height="@dimen/x21"
-                android:layout_marginRight="@dimen/x30"
-                android:src="@drawable/ic_borrow_arrows"/>
+            c
 
         </LinearLayout>
 
@@ -296,6 +293,7 @@
             style="@style/horizontalLine"/>
 
         <LinearLayout
+            android:onClick="@{viewModel.go2Wallet}"
             android:background="#fff"
             android:layout_width="match_parent"
             android:layout_height="@dimen/y108"
@@ -306,15 +304,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/x30"
-                android:text="优惠券"
+                android:text="钱包"
                 android:textColor="#444444"
                 android:textSize="@dimen/x28"/>
 
             <View
-
                 style="@style/autoFillStyle"/>
-
-
 
             <ImageView
                 android:layout_width="@dimen/x12"
@@ -329,6 +324,7 @@
             style="@style/horizontalLine"/>
 
         <LinearLayout
+            android:onClick="@{viewModel.go2Bank}"
             android:background="#fff"
             android:layout_width="match_parent"
             android:layout_height="@dimen/y108"

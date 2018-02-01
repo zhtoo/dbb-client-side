@@ -18,14 +18,35 @@
                   android:orientation="vertical">
 
 
-        <TextView
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/y98"
-            android:background="#fff"
-            android:gravity="center"
-            android:text="汇民贷"
-            android:textColor="#222222"
-            android:textSize="@dimen/x36"/>
+            android:layout_height="@dimen/y98">
+
+            <FrameLayout
+                android:onClick="back"
+                android:layout_width="@dimen/x98"
+                android:layout_height="@dimen/y98"
+                >
+
+                <ImageView
+                    android:layout_width="@dimen/x18"
+                    android:layout_height="@dimen/y31"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_arrow_left"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="汇民贷"
+                android:textColor="#222222"
+                android:textSize="@dimen/x36"/>
+
+
+        </RelativeLayout>
+
 
 
         <ImageView

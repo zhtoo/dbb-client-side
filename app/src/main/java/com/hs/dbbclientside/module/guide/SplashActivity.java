@@ -41,7 +41,7 @@ public class SplashActivity  extends AppCompatActivity{
             SPUtil.setValue(BaseParams.IS_FIRST_IN,false);
         }else {
             startActivity(new Intent(SplashActivity.this, MainActivity.class));
-            SPUtil.setValue(BaseParams.IS_FIRST_IN,true);
+           // SPUtil.setValue(BaseParams.IS_FIRST_IN,true);
         }
         finish();
     }

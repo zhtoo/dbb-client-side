@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.hs.dbbclientside.module.me.EnchashmentViewModel"/>
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="#F5F7F6"
+                  android:orientation="vertical">
+
+        <!--标题-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y98"
+            android:background="#FFF">
+
+            <FrameLayout
+                android:layout_width="@dimen/x98"
+                android:layout_height="@dimen/y98"
+                android:onClick="back">
+
+                <ImageView
+                    android:layout_width="@dimen/x18"
+                    android:layout_height="@dimen/y31"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_arrow_left"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="提现"
+                android:textColor="#222222"
+                android:textSize="@dimen/x36"/>
+
+
+        </RelativeLayout>
+
+        <View
+            style="@style/horizontalLine"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:layout_marginTop="@dimen/y15"
+            android:background="#FFF">
+
+            <ImageView
+                android:id="@+id/enchashment_bank_icon"
+                android:layout_width="@dimen/x76"
+                android:layout_height="@dimen/y76"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x30"
+                android:src="@drawable/qb_icon_03"/>
+
+            <TextView
+                android:id="@+id/enchashment_bank_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginTop="@dimen/y25"
+                android:layout_toRightOf="@id/enchashment_bank_icon"
+                android:text="中国工商银行"
+                android:textColor="#222"
+                android:textSize="@dimen/x28"/>
+
+
+            <TextView
+                android:id="@+id/enchashment_bank_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/enchashment_bank_name"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginTop="@dimen/y10"
+                android:layout_toRightOf="@id/enchashment_bank_icon"
+                android:text="尾号8267储蓄卡"
+                android:textColor="#777"
+                android:textSize="@dimen/x24"/>
+
+
+            <ImageView
+                android:layout_width="@dimen/x12"
+                android:layout_height="@dimen/x21"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x30"
+                android:src="@drawable/ic_borrow_arrows"/>
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y15"
+            android:background="#FFF"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/x30"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginTop="@dimen/x30"
+                android:text="提现金额"
+                android:textColor="#666"
+                android:textSize="@dimen/x30"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y110"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:text="￥"
+                    android:textColor="#222"
+                    android:textSize="@dimen/x72"/>
+
+
+                <EditText
+                    android:id="@+id/enchashment_money"
+                    style="@style/edit_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:inputType="numberDecimal"
+                    android:hint="请输入金额"
+                    android:textColor="#222"
+                    android:textSize="@dimen/x72"/>
+
+
+            </LinearLayout>
+
+            <View
+                style="@style/horizontalLine"
+                android:layout_marginLeft="@dimen/x30"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y90"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:text="提现金额 46.00元"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/x28"/>
+
+                <View style="@style/autoFillStyle"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginRight="@dimen/x30"
+                    android:text="全部提现"
+                    android:textColor="#3E97F2"
+                    android:textSize="@dimen/x28"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:layout_marginTop="@dimen/y90"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="@dimen/x690"
+            android:layout_height="@dimen/y98"
+            android:background="@drawable/shape_rectangle_bule"
+            android:textColor="#FFF"
+            android:textSize="@dimen/x36"
+            android:text="两小时内到账，确认提现"/>
+
+    </LinearLayout>
+
+
+</layout>

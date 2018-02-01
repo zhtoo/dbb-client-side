@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.hs.dbbclientside.module.me.SettingViewModel"/>
+    </data>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="#F5F7F6"
+                  android:orientation="vertical">
+
+        <!--标题-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y98"
+            android:background="#FFF">
+
+            <FrameLayout
+                android:layout_width="@dimen/x98"
+                android:layout_height="@dimen/y98"
+                android:onClick="back">
+
+                <ImageView
+                    android:layout_width="@dimen/x18"
+                    android:layout_height="@dimen/y31"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_arrow_left"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="设置"
+                android:textColor="#222222"
+                android:textSize="@dimen/x36"/>
+
+
+        </RelativeLayout>
+
+        <View
+            style="@style/horizontalLine"/>
+
+        <View
+            style="@style/horizontalLine"
+            android:layout_marginTop="@dimen/y15"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="#FFF"
+            android:orientation="vertical">
+            <!--个人头像-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y120"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/x200"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/x30"
+                    android:text="个人头像"
+                    android:textColor="#444"
+                    android:textSize="@dimen/x28"/>
+
+                <View style="@style/autoFillStyle"/>
+
+                <com.hs.dbbclientside.view.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/setting_icon"
+                    android:layout_width="@dimen/x64"
+                    android:layout_height="@dimen/x64"
+                    android:layout_marginRight="@dimen/x28"
+                    android:src="@drawable/ic_me_default_face"
+                    app:civ_border_color="@android:color/white"
+                    app:civ_border_width="1dip"/>
+
+
+                <ImageView
+                    android:layout_width="@dimen/x12"
+                    android:layout_height="@dimen/x21"
+                    android:layout_marginRight="@dimen/x30"
+                    android:src="@drawable/ic_borrow_arrows"/>
+
+            </LinearLayout>
+
+            <View
+                style="@style/horizontalLine"
+                android:layout_marginLeft="@dimen/x30"/>
+
+            <!--用户名-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y120"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/x200"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/x30"
+                    android:text="用户名"
+                    android:textColor="#444"
+                    android:textSize="@dimen/x28"/>
+
+                <View style="@style/autoFillStyle"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/x30"
+                    android:text="张曼玉"
+                    android:textColor="#999"
+                    android:textSize="@dimen/x28"/>
+
+
+            </LinearLayout>
+
+            <View
+                style="@style/horizontalLine"
+                android:layout_marginLeft="@dimen/x30"/>
+
+            <!--绑定手机-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y120"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/x200"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/x30"
+                    android:text="绑定手机"
+                    android:textColor="#444"
+                    android:textSize="@dimen/x28"/>
+
+                <View style="@style/autoFillStyle"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/x30"
+                    android:text="135****6868"
+                    android:textColor="#999"
+                    android:textSize="@dimen/x28"/>
+
+
+            </LinearLayout>
+
+            <View
+                style="@style/horizontalLine"
+                android:layout_marginLeft="@dimen/x30"/>
+
+            <!--修改密码-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y120"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/x200"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/x30"
+                    android:text="修改密码"
+                    android:textColor="#444"
+                    android:textSize="@dimen/x28"/>
+
+                <View style="@style/autoFillStyle"/>
+
+
+                <ImageView
+                    android:layout_width="@dimen/x12"
+                    android:layout_height="@dimen/x21"
+                    android:layout_marginRight="@dimen/x30"
+                    android:src="@drawable/ic_borrow_arrows"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            style="@style/horizontalLine"/>
+
+        <View
+            style="@style/horizontalLine"
+            android:layout_marginTop="@dimen/y15"/>
+
+
+        <!--我的会员-->
+        <LinearLayout
+            android:background="#FFF"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/x200"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/x30"
+                android:text="我的会员"
+                android:textColor="#444"
+                android:textSize="@dimen/x28"/>
+
+            <View style="@style/autoFillStyle"/>
+
+            <ImageView
+                android:layout_width="@dimen/x12"
+                android:layout_height="@dimen/x21"
+                android:layout_marginRight="@dimen/x30"
+                android:src="@drawable/ic_borrow_arrows"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/horizontalLine"/>
+
+        <View
+            style="@style/horizontalLine"
+            android:layout_marginTop="@dimen/y15"
+            android:background="#FFF"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:background="#FFF"
+            android:gravity="center"
+            android:text="退出当前账号"
+            android:textColor="#E88A8A"
+            android:textSize="@dimen/x30"/>
+
+
+    </LinearLayout>
+
+
+</layout>

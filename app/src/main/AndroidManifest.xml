@@ -23,15 +23,26 @@
 
         <activity android:name=".module.guide.GuideActivity"/>
         <activity android:name=".MainActivity"/>
-        <activity android:name=".module.help.CreditQueriesActivity"/>
+        <activity android:name=".module.login.LoginActivity"/>
+        <activity android:name=".module.login.RegisterActivity"/>
+        <activity android:name=".module.login.CertificationActivity"/>
+        <activity android:name=".module.login.ForgetActivity"/>
+        <activity android:name=".module.home.MessageActivity"/>
+        <activity android:name=".module.home.UseHelpAcyivity"/>
         <activity android:name=".module.borrow.ApplyIntroduceActivity"/>
         <activity android:name=".module.borrow.ApplyActivity"/>
+        <activity android:name=".module.help.CreditQueriesActivity"/>
+        <activity android:name=".module.help.ApplyProcessActivtiy"/>
+        <activity android:name=".module.help.ForecastToolsActivity"/>
         <activity android:name=".module.me.BillActivity"/>
         <activity android:name=".module.me.ApplyRecordActivity"/>
         <activity android:name=".module.me.PersonalInformationActivity"/>
         <activity android:name=".module.me.UploadIdCardActivity"/>
-        <activity android:name=".module.help.ApplyProcessActivtiy"/>
-        <activity android:name=".module.help.ForecastToolsActivity"/>
+        <activity android:name=".module.me.SettingActivity"/>
+        <activity android:name=".module.me.WalletActivity"/>
+        <activity android:name=".module.me.DetailActivity"/>
+        <activity android:name=".module.me.EnchashmentActivity"/>
+        <activity android:name=".module.me.BankActivity"/>
     </application>
 
 </manifest>

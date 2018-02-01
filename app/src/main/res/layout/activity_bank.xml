@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.hs.dbbclientside.module.me.BankViewModel"/>
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical"
+                  android:background="#E5E5E5"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+
+        <!--标题-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y98"
+            android:background="#FFF">
+
+            <FrameLayout
+                android:onClick="back"
+                android:layout_width="@dimen/x98"
+                android:layout_height="@dimen/y98">
+
+                <ImageView
+                    android:layout_width="@dimen/x18"
+                    android:layout_height="@dimen/y31"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_arrow_left"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="我的银行卡"
+                android:textColor="#222222"
+                android:textSize="@dimen/x36"/>
+
+
+            <FrameLayout
+                android:onClick="@{viewModel.addBank}"
+                android:id="@+id/bank_add_btn"
+                android:layout_width="@dimen/x98"
+                android:layout_height="@dimen/y98"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:id="@+id/personal_info_save_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="添加"
+                    android:textColor="#30B2EE"
+                    android:textSize="@dimen/x28"/>
+
+            </FrameLayout>
+
+
+        </RelativeLayout>
+
+        <View
+            style="@style/horizontalLine"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/bank_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+</layout>

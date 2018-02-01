@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.hs.dbbclientside.module.me.WalletViewModel"/>
+    </data>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="#F5F7F6"
+                  android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/wallet_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y650"
+            android:background="@drawable/qb_bg_01"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <!--标题-->
+            <RelativeLayout
+                android:id="@+id/wallet_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y98"
+                android:background="@android:color/transparent">
+
+                <FrameLayout
+                    android:layout_width="@dimen/x98"
+                    android:layout_height="@dimen/y98"
+                    android:onClick="back">
+
+                    <ImageView
+                        android:layout_width="@dimen/x18"
+                        android:layout_height="@dimen/y31"
+                        android:layout_gravity="center"
+                        android:src="@drawable/zx_btn_01"/>
+
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="我的钱包"
+                    android:textColor="#FFF"
+                    android:textSize="@dimen/x36"/>
+
+
+                <FrameLayout
+                    android:onClick="go2Detail"
+                    android:id="@+id/personal_info_save_btn"
+                    android:layout_width="@dimen/x98"
+                    android:layout_height="@dimen/y98"
+                    android:layout_alignParentRight="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="明细"
+                        android:textColor="#FFF"
+                        android:textSize="@dimen/x28"/>
+
+                </FrameLayout>
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y120"
+                android:text="账户余额（元）"
+                android:textColor="#FFF"
+                android:textSize="@dimen/x36"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y58"
+                android:text="46.88"
+                android:textColor="#FFF"
+                android:textSize="@dimen/x64"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:layout_marginTop="@dimen/y15"
+            android:background="#FFF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/x49"
+                android:layout_height="@dimen/x43"
+                android:layout_marginLeft="@dimen/x30"
+                android:src="@drawable/qb_icon_01"
+                android:textColor="#444"
+                android:textSize="@dimen/x28"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/x35"
+                android:text="充值"
+                android:textColor="#666"
+                android:textSize="@dimen/x28"/>
+
+            <View style="@style/autoFillStyle"/>
+
+            <ImageView
+                android:layout_width="@dimen/x12"
+                android:layout_height="@dimen/x21"
+                android:layout_marginRight="@dimen/x30"
+                android:src="@drawable/ic_borrow_arrows"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/horizontalLine"/>
+
+        <LinearLayout
+            android:onClick="go2Enchashment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+
+            android:background="#FFF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/x51"
+                android:layout_height="@dimen/x50"
+                android:layout_marginLeft="@dimen/x30"
+                android:src="@drawable/qb_icon_02"
+                android:textColor="#444"
+                android:textSize="@dimen/x28"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/x35"
+                android:text="提现"
+                android:textColor="#666"
+                android:textSize="@dimen/x28"/>
+
+            <View style="@style/autoFillStyle"/>
+
+            <ImageView
+                android:layout_width="@dimen/x12"
+                android:layout_height="@dimen/x21"
+                android:layout_marginRight="@dimen/x30"
+                android:src="@drawable/ic_borrow_arrows"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</layout>

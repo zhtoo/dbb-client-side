@@ -23,6 +23,7 @@
             android:layout_height="@dimen/y98">
 
             <FrameLayout
+                android:onClick="back"
                 android:layout_width="@dimen/x98"
                 android:layout_height="@dimen/y98">
 

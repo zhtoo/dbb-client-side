@@ -29,6 +29,8 @@ public class MainViewModel {
     private FragmentManager mSupportFragmentManager;
     private FragmentTabHost tabhost;
 
+    private String[] tabs = {"homeTab","borrowTab","helpTab","meTab"};
+
     public MainViewModel(Context context, ActivityMainBinding binding, FragmentManager mSupportFragmentManager, FragmentTabHost tabhost) {
         this.context = context;
         this.binding = binding;
@@ -37,6 +39,9 @@ public class MainViewModel {
         intiTab(binding);
     }
 
+    public void changeTab(int position){
+        tabhost.setCurrentTabByTag(tabs[position]);
+    }
 
     private void intiTab(ActivityMainBinding binding) {
         //1.绑定tabhost和切换Fragment的布局
@@ -46,19 +51,19 @@ public class MainViewModel {
 
         //2.创建Tab按钮
         //创建首页界面的按钮
-        TabHost.TabSpec homeTab = tabhost.newTabSpec("all");
+        TabHost.TabSpec homeTab = tabhost.newTabSpec(tabs[0]);
         homeTab.setIndicator(getIndicateView(R.drawable.ic_main_tab_home_selector, "首页"));
 
         //创建借款界面的按钮
-        TabHost.TabSpec borrowTab = tabhost.newTabSpec("tweet");
+        TabHost.TabSpec borrowTab = tabhost.newTabSpec(tabs[1]);
         borrowTab.setIndicator(getIndicateView(R.drawable.ic_main_tab_borrowing_selector, "借款"));
 
         //创建帮助界面的按钮
-        TabHost.TabSpec helpTab = tabhost.newTabSpec("exploreTab");
+        TabHost.TabSpec helpTab = tabhost.newTabSpec(tabs[2]);
         helpTab.setIndicator(getIndicateView(R.drawable.ic_main_tab_help_selector, "帮助"));
 
         //创建我的界面的按钮
-        TabHost.TabSpec meTab = tabhost.newTabSpec("meTab");
+        TabHost.TabSpec meTab = tabhost.newTabSpec(tabs[3]);
         meTab.setIndicator(getIndicateView(R.drawable.ic_main_tab_me_selector, "我的"));
 
         //3.添加Tab按钮以及对应的Fragment

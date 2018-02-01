@@ -115,7 +115,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_toRightOf="@id/help_data_listing"
-                    android:text="资料清单"
+                    android:text="企业咨询"
                     android:layout_marginLeft="@dimen/x20"
                     android:textColor="#444444"
                     android:textSize="@dimen/x28"/>

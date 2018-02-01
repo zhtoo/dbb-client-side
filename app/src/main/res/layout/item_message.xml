@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="string"
+            type="String"/>
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="#FFF"
+                  android:id="@+id/message_container"
+                  android:orientation="vertical">
+
+        <View
+            style="@style/horizontalLine"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x160">
+
+            <TextView
+                android:id="@+id/message_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginTop="@dimen/y36"
+                android:text="我是鲜艳的标题"
+                android:textColor="#666"
+                android:textSize="@dimen/x30"/>
+
+
+            <TextView
+                android:id="@+id/message_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/message_title"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginTop="@dimen/y30"
+                android:text="发布时间："
+
+                android:textColor="#999999"
+
+                android:textSize="@dimen/x28"/>
+
+
+            <TextView
+                android:id="@+id/message_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/message_title"
+                android:layout_marginLeft="@dimen/x15"
+                android:layout_marginTop="@dimen/y30"
+                android:layout_toRightOf="@id/message_time_text"
+                android:text="2018-01-01"
+
+                android:textColor="#999999"
+
+                android:textSize="@dimen/x28"/>
+
+            <ImageView
+                android:layout_width="@dimen/x12"
+                android:layout_height="@dimen/x21"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x30"
+                android:src="@drawable/ic_borrow_arrows"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</layout>

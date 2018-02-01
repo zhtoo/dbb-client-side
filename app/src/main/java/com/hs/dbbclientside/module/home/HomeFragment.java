@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.hs.dbbclientside.MainActivity;
 import com.hs.dbbclientside.R;
 import com.hs.dbbclientside.base.BaseFragment;
 import com.hs.dbbclientside.databinding.FragmentHomeBinding;
@@ -22,6 +23,7 @@ public class HomeFragment extends BaseFragment {
 
     private FragmentHomeBinding binding;
     private HomeViewModel viewModle;
+    private MainActivity activity;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -29,8 +31,8 @@ public class HomeFragment extends BaseFragment {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_home, container, false);
         measureTitleBarHeight(binding.getRoot());
      //   binding.executePendingBindings();//此方法必须执行在UI线程，当绑定的数据修改时更新视图
-
-        viewModle = new HomeViewModel(getContext(),binding);
+        activity = (MainActivity) getActivity();
+        viewModle = new HomeViewModel(getContext(),binding, activity);
         binding.setViewModel(viewModle);
         return binding.getRoot();
     }

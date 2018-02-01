@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.hs.dbbclientside.module.home.UseHelpViewModel"/>
+    </data>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="#F6F8F7"
+                  android:orientation="vertical">
+
+        <!--标题-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y98"
+            android:background="#FFF">
+
+            <FrameLayout
+                android:layout_width="@dimen/x98"
+                android:layout_height="@dimen/y98"
+                android:onClick="back">
+
+                <ImageView
+                    android:layout_width="@dimen/x18"
+                    android:layout_height="@dimen/y31"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_arrow_left"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="使用帮助"
+                android:textColor="#222222"
+                android:textSize="@dimen/x36"/>
+
+
+        </RelativeLayout>
+
+        <View
+            style="@style/horizontalLine"/>
+
+        <View
+            style="@style/horizontalLine"
+            android:layout_height="@dimen/y15"
+            android:background="#f2f2f2"/>
+
+        <View
+            style="@style/horizontalLine"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <!--常见术语-->
+                <LinearLayout
+                    android:id="@+id/use_help_01"
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/y190"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/x82"
+                        android:layout_height="@dimen/y82"
+                        android:src="@drawable/find_help_btn_01"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/y16"
+                        android:text="常见术语"
+                        android:textColor="#444"
+                        android:textSize="@dimen/x30"/>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/verticalLine"/>
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/y190"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/x82"
+                        android:layout_height="@dimen/y82"
+                        android:src="@drawable/find_help_btn_07"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/y16"
+                        android:text="注册/登录"
+                        android:textColor="#444"
+                        android:textSize="@dimen/x30"/>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/verticalLine"/>
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/y190"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/x82"
+                        android:layout_height="@dimen/y82"
+                        android:src="@drawable/find_help_btn_05"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/y16"
+                        android:text="认证/绑卡"
+                        android:textColor="#444"
+                        android:textSize="@dimen/x30"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                style="@style/horizontalLine"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/y190"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/x82"
+                        android:layout_height="@dimen/y82"
+                        android:src="@drawable/find_help_btn_02"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/y16"
+                        android:text="充值/提现"
+                        android:textColor="#444"
+                        android:textSize="@dimen/x30"/>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/verticalLine"/>
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/y190"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/x82"
+                        android:layout_height="@dimen/y82"
+                        android:src="@drawable/find_help_btn_06"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/y16"
+                        android:text="投资/收益"
+                        android:textColor="#444"
+                        android:textSize="@dimen/x30"/>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/verticalLine"/>
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/y190"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/x82"
+                        android:layout_height="@dimen/y82"
+                        android:src="@drawable/find_help_btn_03"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/y16"
+                        android:text="存管问题"
+                        android:textColor="#444"
+                        android:textSize="@dimen/x30"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <View
+                style="@style/horizontalLine"/>
+        </LinearLayout>
+
+        <View
+            style="@style/horizontalLine"
+            android:layout_height="@dimen/y15"
+            android:background="#f2f2f2"/>
+
+        <View
+            style="@style/horizontalLine"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/y29"
+            android:paddingTop="@dimen/y29">
+
+            <ImageView
+                android:layout_width="@dimen/x12"
+                android:layout_height="@dimen/y40"
+                android:layout_marginLeft="@dimen/x30"
+                android:src="@drawable/find_help_icon_02"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/x11"
+                android:text="常用术语"
+                android:textColor="#444444"
+                android:textSize="@dimen/x36"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/horizontalLine"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/use_help_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+          />
+
+
+
+    </LinearLayout>
+</layout>

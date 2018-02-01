@@ -1,14 +1,20 @@
 package com.hs.dbbclientside.module.home;
 
 import android.content.Context;
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.widget.LinearLayout;
 
+import com.hs.dbbclientside.MainActivity;
 import com.hs.dbbclientside.R;
+import com.hs.dbbclientside.base.BaseParams;
 import com.hs.dbbclientside.databinding.FragmentHomeBinding;
 import com.hs.dbbclientside.databinding.ItemHomeBinding;
+import com.hs.dbbclientside.module.login.LoginActivity;
+import com.hs.dbbclientside.util.SPUtil;
 import com.hs.dbbclientside.util.ToastUtil;
 import com.zht.banner.banner.CBViewHolderCreator;
 import com.zht.banner.banner.NetworkImageHolderView;
@@ -28,10 +34,19 @@ public class HomeViewModel {
 
     private Context context;
     private FragmentHomeBinding binding;
+    private MainActivity activity;
+
 
     public HomeViewModel(Context context, FragmentHomeBinding binding) {
         this.context = context;
         this.binding = binding;
+        initData();
+    }
+
+    public HomeViewModel(Context context, FragmentHomeBinding binding, MainActivity activity) {
+        this.context = context;
+        this.binding = binding;
+        this.activity = activity;
         initData();
     }
 
@@ -71,6 +86,7 @@ public class HomeViewModel {
         }
     }
 
+
     /**
      * 绑定banner图
      */
@@ -94,8 +110,8 @@ public class HomeViewModel {
                                 if (!TextUtils.isEmpty(bannerList.get(position).getLink())) {
                                     //link 不为空时跳转
 
-                                }else {
-                                    ToastUtil.showToast("链接为空，请勿点击！！！"+position);
+                                } else {
+                                    ToastUtil.showToast("链接为空，请勿点击！！！" + position);
                                 }
                             }
                         };
@@ -106,7 +122,28 @@ public class HomeViewModel {
     }
 
 
+    /////////////////////////////////////////////////////////////////////
+    //////点击事件处理START
+    /////////////////////////////////////////////////////////////////////
+    public void go2Borrow(View view) {
+        boolean hasLogin = SPUtil.getBoolean(BaseParams.hasLogin, false);
+        if(hasLogin){
+            activity.getViewModel().changeTab(2);
+        }else {
+           context.startActivity(new Intent(context, LoginActivity.class));
+        }
+    }
 
+
+
+    public void go2Message(View view) {
+            context.startActivity(new Intent(context, MessageActivity.class));
+    }
+
+
+    public void go2UseHelp(View view) {
+        context.startActivity(new Intent(context, UseHelpAcyivity.class));
+    }
 
 
 }

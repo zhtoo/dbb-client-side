@@ -36,4 +36,15 @@ public class MeViewModel {
         context.startActivity(new Intent(context,PersonalInformationActivity.class));
     }
 
+    public void go2Setting(View view){
+        context.startActivity(new Intent(context,SettingActivity.class));
+    }
+    public void go2Wallet(View view){
+        context.startActivity(new Intent(context,WalletActivity.class));
+    }
+
+
+    public void go2Bank(View view){
+        context.startActivity(new Intent(context,BankActivity.class));
+    }
 }

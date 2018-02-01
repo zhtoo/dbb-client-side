@@ -8,20 +8,21 @@
             type="com.hs.dbbclientside.module.login.LoginViewModel"/>
     </data>
 
-
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                   android:layout_width="match_parent"
                   android:layout_height="match_parent"
                   android:background="@drawable/ic_login_bg"
+                  android:gravity="center_horizontal"
                   android:orientation="vertical">
 
-
+        <!--标题-->
         <RelativeLayout
 
             android:layout_width="match_parent"
             android:layout_height="@dimen/y98">
 
             <FrameLayout
+                android:onClick="back"
                 android:layout_width="@dimen/x98"
                 android:layout_height="@dimen/y98">
 
@@ -33,12 +34,154 @@
 
             </FrameLayout>
 
-
-
         </RelativeLayout>
 
+        <!--账号-->
+        <LinearLayout
+            android:layout_width="@dimen/x570"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/y5"
+            android:layout_marginTop="@dimen/y400"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/x39"
+                android:layout_height="@dimen/y39"
+                android:src="@drawable/enter_icon_01"/>
+
+            <EditText
+                style="@style/edit_input"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_weight="1"
+                android:hint="请输入您的账号"
+                android:textColor="#BBB"
+                android:textColorHint="#BBB"
+                android:textSize="@dimen/x30"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/horizontalLine"
+            android:layout_width="@dimen/x570"
+            android:layout_gravity="center_horizontal"/>
 
 
+        <!--密码-->
+        <LinearLayout
+            android:layout_width="@dimen/x570"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/y5"
+            android:layout_marginTop="@dimen/y70"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/x39"
+                android:layout_height="@dimen/y39"
+                android:src="@drawable/enter_icon_02"/>
+
+            <EditText
+                style="@style/edit_input"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_weight="1"
+                android:hint="请输入您的密码"
+                android:inputType="textPassword"
+                android:textColor="#BBB"
+                android:textColorHint="#BBB"
+                android:textSize="@dimen/x30"/>
+
+            <ImageView
+                android:layout_width="@dimen/x39"
+                android:layout_height="@dimen/y39"
+                android:src="@drawable/enter_icon_03"/>
+        </LinearLayout>
+
+
+        <View
+            style="@style/horizontalLine"
+            android:layout_width="@dimen/x570"
+            android:layout_gravity="center_horizontal"/>
+
+        <!--注册/忘记密码-->
+        <LinearLayout
+            android:layout_width="@dimen/x570"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/y20"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:onClick="go2Register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="立即注册"
+                android:textColor="#444"
+                android:textSize="@dimen/x28"/>
+
+            <View
+                style="@style/autoFillStyle"/>
+
+            <TextView
+                android:onClick="go2Forget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="忘记密码?"
+                android:textColor="#444"
+                android:textSize="@dimen/x28"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="@dimen/x528"
+            android:layout_height="@dimen/y86"
+            android:layout_marginTop="@dimen/y80"
+            android:background="@drawable/enter_btn_05"
+            android:text="登录"
+            android:textColor="#FFF"
+            android:textSize="@dimen/x36"/>
+
+        <View style="@style/autoFillStyle"/>
+
+        <!--微博/微信/QQ第三方登录-->
+        <LinearLayout
+            android:layout_width="@dimen/x446"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/y80"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/x69"
+                android:layout_height="@dimen/x69"
+                android:src="@drawable/enter_btn_01"/>
+
+            <View
+                style="@style/autoFillStyle"/>
+
+            <ImageView
+                android:layout_width="@dimen/x69"
+                android:layout_height="@dimen/x69"
+                android:src="@drawable/enter_btn_02"/>
+
+            <View
+                style="@style/autoFillStyle"/>
+
+
+            <ImageView
+                android:layout_width="@dimen/x69"
+                android:layout_height="@dimen/x69"
+                android:src="@drawable/enter_btn_03"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 

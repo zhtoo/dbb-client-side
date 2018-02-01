@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.hs.dbbclientside.module.login.RegisterViewModel"/>
+
+    </data>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="#F6F8F7"
+                  android:orientation="vertical">
+        <!--标题-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y98"
+            android:background="#FFF">
+
+            <FrameLayout
+                android:onClick="back"
+                android:layout_width="@dimen/x98"
+                android:layout_height="@dimen/y98">
+
+                <ImageView
+                    android:layout_width="@dimen/x18"
+                    android:layout_height="@dimen/y31"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_arrow_left"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="注册"
+                android:textColor="#222222"
+                android:textSize="@dimen/x36"/>
+
+
+        </RelativeLayout>
+
+
+        <View
+            style="@style/horizontalLine"/>
+
+        <!--注册账号-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/x176"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/x30"
+                android:text="注册账号"
+                android:textColor="#444"
+                android:textSize="@dimen/x30"/>
+
+            <EditText
+                style="@style/edit_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="请输入您的手机号"
+                android:textColor="#BBB"
+                android:textColorHint="#BBB"
+                android:textSize="@dimen/x30"
+                />
+        </LinearLayout>
+
+        <View
+            style="@style/horizontalLine"/>
+
+
+        <!--验证码-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/x176"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/x30"
+                android:text="验证码"
+                android:textColor="#444"
+                android:textSize="@dimen/x30"/>
+
+            <EditText
+                style="@style/edit_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="请输入您的短信验证码"
+                android:textColor="#BBB"
+                android:textColorHint="#BBB"
+                android:textSize="@dimen/x30"
+                />
+
+            <Button
+                android:layout_width="@dimen/x152"
+                android:layout_height="@dimen/y58"
+                android:layout_marginRight="@dimen/x30"
+                android:background="@drawable/register_btn_01"
+                android:text="获取验证码"
+                android:textColor="#FFF"
+                android:textSize="@dimen/x28"/>
+
+
+        </LinearLayout>
+
+        <View
+            style="@style/horizontalLine"/>
+
+        <!--设置密码-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/x176"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/x30"
+                android:text="设置密码"
+                android:textColor="#444"
+                android:textSize="@dimen/x30"/>
+
+            <EditText
+                style="@style/edit_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="6-20位数字字母组合"
+                android:textColor="#BBB"
+                android:textColorHint="#BBB"
+                android:textSize="@dimen/x30"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/horizontalLine"/>
+
+
+        <!--邀请码-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/x176"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/x30"
+                android:text="邀请码"
+                android:textColor="#444"
+                android:textSize="@dimen/x30"/>
+
+            <EditText
+                style="@style/edit_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="请输入您的邀请码（选填）"
+                android:textColor="#BBB"
+                android:textColorHint="#BBB"
+                android:textSize="@dimen/x30"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/horizontalLine"/>
+
+
+        <Button
+            android:onClick="next"
+            android:layout_width="@dimen/x528"
+            android:layout_height="@dimen/y86"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/y122"
+            android:background="@drawable/enter_btn_05"
+            android:text="下一步"
+            android:textColor="#FFF"
+            android:textSize="@dimen/x36"/>
+
+
+    </LinearLayout>
+
+
+</layout>
